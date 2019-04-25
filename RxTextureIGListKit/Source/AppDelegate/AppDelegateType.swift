@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  AppDelegateType.swift
 //  RxTextureIGListKit
 //
 //  Created by 윤중현 on 25/04/2019.
@@ -8,15 +8,19 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+protocol AppDelegateType: UIApplicationDelegate, ApplicationDelegate {
 
-    var window: UIWindow?
+    // MARK: - Property
 
+    var application: ApplicationType { get }
+
+    // MARK: - UIApplicationDelegate
+
+    var window: UIWindow? { get set }
+
+    @discardableResult
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-        ) -> Bool {
-        return true
-    }
+        ) -> Bool
 }

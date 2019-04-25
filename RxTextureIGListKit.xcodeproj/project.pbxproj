@@ -11,6 +11,17 @@
 		60DF316A22715EBC00E05C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF316922715EBC00E05C00 /* AppDelegate.swift */; };
 		60DF317122715EBE00E05C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317022715EBE00E05C00 /* Assets.xcassets */; };
 		60DF317422715EBE00E05C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317222715EBE00E05C00 /* LaunchScreen.storyboard */; };
+		60DF31902271680300E05C00 /* ApplicationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF318F2271680300E05C00 /* ApplicationType.swift */; };
+		60DF31922271682E00E05C00 /* ApplicationRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31912271682E00E05C00 /* ApplicationRouterType.swift */; };
+		60DF31962271685000E05C00 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31952271685000E05C00 /* RouterType.swift */; };
+		60DF31992271688700E05C00 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31982271688600E05C00 /* Application.swift */; };
+		60DF319B22716A8700E05C00 /* AppDelegateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF319A22716A8700E05C00 /* AppDelegateType.swift */; };
+		60DF319D22716B9A00E05C00 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF319C22716B9A00E05C00 /* ApplicationRouter.swift */; };
+		60DF319F22716F4400E05C00 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF319E22716F4400E05C00 /* main.swift */; };
+		60DF31A522716FEB00E05C00 /* StubAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31A422716FEB00E05C00 /* StubAppDelegate.swift */; };
+		60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */; };
+		60DF31AA227172E000E05C00 /* StubApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31A9227172E000E05C00 /* StubApplication.swift */; };
+		60DF31AC2271777E00E05C00 /* AppDelegateSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31AB2271777E00E05C00 /* AppDelegateSpecs.swift */; };
 		B906E05DB3684505E7C74508 /* Pods_RxTextureIGListKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC307ADC221A30FD44DC27BF /* Pods_RxTextureIGListKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +46,18 @@
 		60DF317A22715EBE00E05C00 /* RxTextureIGListKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTextureIGListKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DF318022715EBE00E05C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DF31892271665700E05C00 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		60DF318F2271680300E05C00 /* ApplicationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationType.swift; sourceTree = "<group>"; };
+		60DF31912271682E00E05C00 /* ApplicationRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouterType.swift; sourceTree = "<group>"; };
+		60DF31952271685000E05C00 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		60DF31982271688600E05C00 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		60DF319A22716A8700E05C00 /* AppDelegateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateType.swift; sourceTree = "<group>"; };
+		60DF319C22716B9A00E05C00 /* ApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
+		60DF319E22716F4400E05C00 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		60DF31A322716FEB00E05C00 /* RxTextureIGListKitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxTextureIGListKitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		60DF31A422716FEB00E05C00 /* StubAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubAppDelegate.swift; sourceTree = "<group>"; };
+		60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApplicationRouter.swift; sourceTree = "<group>"; };
+		60DF31A9227172E000E05C00 /* StubApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApplication.swift; sourceTree = "<group>"; };
+		60DF31AB2271777E00E05C00 /* AppDelegateSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpecs.swift; sourceTree = "<group>"; };
 		623A189950E5F01D6CADFA96 /* Pods_RxTextureIGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CE7E5C67FF640D65F0FC97 /* Pods-RxTextureIGListKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextureIGListKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxTextureIGListKitTests/Pods-RxTextureIGListKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC307ADC221A30FD44DC27BF /* Pods_RxTextureIGListKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,10 +128,9 @@
 		60DF316822715EBC00E05C00 /* RxTextureIGListKit */ = {
 			isa = PBXGroup;
 			children = (
-				60DF316922715EBC00E05C00 /* AppDelegate.swift */,
-				60DF317022715EBE00E05C00 /* Assets.xcassets */,
-				60DF317222715EBE00E05C00 /* LaunchScreen.storyboard */,
-				60DF317522715EBE00E05C00 /* Info.plist */,
+				60DF319E22716F4400E05C00 /* main.swift */,
+				60DF318B227167D500E05C00 /* Source */,
+				60DF318C227167E300E05C00 /* Resource */,
 			);
 			path = RxTextureIGListKit;
 			sourceTree = "<group>";
@@ -116,9 +138,102 @@
 		60DF317D22715EBE00E05C00 /* RxTextureIGListKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				60DF318022715EBE00E05C00 /* Info.plist */,
+				60DF31A022716F8600E05C00 /* Source */,
+				60DF31A122716F8C00E05C00 /* Resource */,
 			);
 			path = RxTextureIGListKitTests;
+			sourceTree = "<group>";
+		};
+		60DF318B227167D500E05C00 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31932271683000E05C00 /* Common */,
+				60DF318D227167F200E05C00 /* AppDelegate */,
+				60DF318E227167F800E05C00 /* Application */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		60DF318C227167E300E05C00 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				60DF317022715EBE00E05C00 /* Assets.xcassets */,
+				60DF317222715EBE00E05C00 /* LaunchScreen.storyboard */,
+				60DF317522715EBE00E05C00 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		60DF318D227167F200E05C00 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				60DF319A22716A8700E05C00 /* AppDelegateType.swift */,
+				60DF316922715EBC00E05C00 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		60DF318E227167F800E05C00 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				60DF318F2271680300E05C00 /* ApplicationType.swift */,
+				60DF31982271688600E05C00 /* Application.swift */,
+				60DF31912271682E00E05C00 /* ApplicationRouterType.swift */,
+				60DF319C22716B9A00E05C00 /* ApplicationRouter.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		60DF31932271683000E05C00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31972271685300E05C00 /* Router */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		60DF31972271685300E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31952271685000E05C00 /* RouterType.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31A022716F8600E05C00 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31A222716FAF00E05C00 /* AppDelegate */,
+				60DF31A62271714500E05C00 /* Application */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		60DF31A122716F8C00E05C00 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31A322716FEB00E05C00 /* RxTextureIGListKitTests-Bridging-Header.h */,
+				60DF318022715EBE00E05C00 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		60DF31A222716FAF00E05C00 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31A422716FEB00E05C00 /* StubAppDelegate.swift */,
+				60DF31AB2271777E00E05C00 /* AppDelegateSpecs.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		60DF31A62271714500E05C00 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31A9227172E000E05C00 /* StubApplication.swift */,
+				60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +294,7 @@
 					};
 					60DF317922715EBE00E05C00 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 						TestTargetID = 60DF316522715EBC00E05C00;
 					};
 				};
@@ -369,7 +485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DF319B22716A8700E05C00 /* AppDelegateType.swift in Sources */,
+				60DF31992271688700E05C00 /* Application.swift in Sources */,
+				60DF319F22716F4400E05C00 /* main.swift in Sources */,
+				60DF31902271680300E05C00 /* ApplicationType.swift in Sources */,
 				60DF316A22715EBC00E05C00 /* AppDelegate.swift in Sources */,
+				60DF319D22716B9A00E05C00 /* ApplicationRouter.swift in Sources */,
+				60DF31962271685000E05C00 /* RouterType.swift in Sources */,
+				60DF31922271682E00E05C00 /* ApplicationRouterType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +500,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DF31A522716FEB00E05C00 /* StubAppDelegate.swift in Sources */,
+				60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */,
+				60DF31AA227172E000E05C00 /* StubApplication.swift in Sources */,
+				60DF31AC2271777E00E05C00 /* AppDelegateSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46KGHHF73Q;
-				INFOPLIST_FILE = RxTextureIGListKit/Info.plist;
+				INFOPLIST_FILE = RxTextureIGListKit/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,7 +672,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46KGHHF73Q;
-				INFOPLIST_FILE = RxTextureIGListKit/Info.plist;
+				INFOPLIST_FILE = RxTextureIGListKit/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,9 +691,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46KGHHF73Q;
-				INFOPLIST_FILE = RxTextureIGListKitTests/Info.plist;
+				INFOPLIST_FILE = RxTextureIGListKitTests/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,6 +702,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tokijh.com.RxTextureIGListKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxTextureIGListKitTests/Resource/RxTextureIGListKitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTextureIGListKit.app/RxTextureIGListKit";
@@ -586,9 +716,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46KGHHF73Q;
-				INFOPLIST_FILE = RxTextureIGListKitTests/Info.plist;
+				INFOPLIST_FILE = RxTextureIGListKitTests/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +727,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tokijh.com.RxTextureIGListKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxTextureIGListKitTests/Resource/RxTextureIGListKitTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTextureIGListKit.app/RxTextureIGListKit";
