@@ -1,0 +1,49 @@
+included:
+- RxTextureIGListKit/
+- RxTextureIGListKitTests/
+
+excluded:
+- Pods/
+
+opt_in_rules:
+- attributes
+- closure_end_indentation
+- closure_spacing
+- conditional_returns_on_newline
+- empty_count
+- explicit_init
+- first_where
+- number_separator
+- object_literal
+- operator_usage_whitespace
+- sorted_imports
+
+disabled_rules:
+- file_header
+- todo
+- identifier_name
+
+force_try:
+  severity: error
+
+force_unwrapping:
+  severity: error
+
+function_body_length:
+- 100 # warning
+- 200 # error
+
+identifier_name:
+  excluded:
+  - id
+  - on
+  - URL
+  - vc
+  - x
+  - y
+
+line_length: 120
+
+type_body_length:
+- 400 # warning
+- 600 # error

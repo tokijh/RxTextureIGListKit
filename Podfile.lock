@@ -23,7 +23,7 @@ PODS:
   - Pure (1.1.0):
     - Pure/Core (= 1.1.0)
   - Pure/Core (1.1.0)
-  - Quick (2.0.0)
+  - Quick (2.1.0)
   - ReactorKit (1.2.1):
     - RxSwift (>= 4.0.0)
   - RxCocoa (4.5.0):
@@ -43,7 +43,7 @@ PODS:
   - RxViewController (0.4.1):
     - RxCocoa (>= 4.0.0)
     - RxSwift (>= 4.0.0)
-  - SnapKit (4.2.0)
+  - SnapKit (5.0.0)
   - Stubber (1.4.0)
   - SwiftLint (0.31.0)
   - Texture (2.8):
@@ -117,7 +117,7 @@ SPEC CHECKSUMS:
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   Pure: 45ef8de7c9d923f971c5656583bc6f108699b1fd
-  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxNimble: ba6caf0195c37fd50dd4b967624b66ff580d781a
@@ -125,12 +125,12 @@ SPEC CHECKSUMS:
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
   RxViewController: e93e7c233d5b5b62c32231d69726d55f54081bc6
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Stubber: 241303d241ad91f70d6d6d20cdaeae5255c82b57
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   Texture: fc6e0157201f3a6e503d364c147b1872e365cef4
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: 35693333c7521388610ae0a13f866b32816a73c2
+PODFILE CHECKSUM: 73699b4904e762579919352ebe8721792d4b849a
 
 COCOAPODS: 1.6.0

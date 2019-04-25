@@ -34,6 +34,7 @@
 		60DF317522715EBE00E05C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DF317A22715EBE00E05C00 /* RxTextureIGListKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTextureIGListKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DF318022715EBE00E05C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60DF31892271665700E05C00 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		623A189950E5F01D6CADFA96 /* Pods_RxTextureIGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CE7E5C67FF640D65F0FC97 /* Pods-RxTextureIGListKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextureIGListKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxTextureIGListKitTests/Pods-RxTextureIGListKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC307ADC221A30FD44DC27BF /* Pods_RxTextureIGListKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +84,7 @@
 		60DF315D22715EBC00E05C00 = {
 			isa = PBXGroup;
 			children = (
+				60DF31892271665700E05C00 /* .swiftlint.yml */,
 				60DF316822715EBC00E05C00 /* RxTextureIGListKit */,
 				60DF317D22715EBE00E05C00 /* RxTextureIGListKitTests */,
 				60DF316722715EBC00E05C00 /* Products */,
@@ -130,6 +132,7 @@
 				60DF316222715EBC00E05C00 /* Sources */,
 				60DF316322715EBC00E05C00 /* Frameworks */,
 				60DF316422715EBC00E05C00 /* Resources */,
+				60DF318A2271669200E05C00 /* SwiftLint */,
 				ED1725507FB9D8DF6B490850 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -240,6 +243,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		60DF318A2271669200E05C00 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint lint\n";
 		};
 		68AD30E38B9C74A461BB2999 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
