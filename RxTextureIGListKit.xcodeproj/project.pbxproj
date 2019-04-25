@@ -176,10 +176,9 @@
 		60DF318E227167F800E05C00 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				60DF31AD22717B3600E05C00 /* Router */,
 				60DF318F2271680300E05C00 /* ApplicationType.swift */,
 				60DF31982271688600E05C00 /* Application.swift */,
-				60DF31912271682E00E05C00 /* ApplicationRouterType.swift */,
-				60DF319C22716B9A00E05C00 /* ApplicationRouter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -234,6 +233,15 @@
 				60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		60DF31AD22717B3600E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31912271682E00E05C00 /* ApplicationRouterType.swift */,
+				60DF319C22716B9A00E05C00 /* ApplicationRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
