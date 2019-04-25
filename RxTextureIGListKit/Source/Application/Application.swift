@@ -31,7 +31,20 @@ final class Application: ApplicationType, FactoryModule {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
         ) -> Bool {
+        setup()
         return true
+    }
+
+    private func setup() {
+        setupWindow()
+    }
+
+    private func setupWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = router.rootViewController
+        window?.makeKeyAndVisible()
+
+        router.presentRoot()
     }
 }
 

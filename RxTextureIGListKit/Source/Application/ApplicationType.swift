@@ -34,9 +34,3 @@ extension ApplicationType {
         set(newWindow) { delegate?.window = newWindow }
     }
 }
-
-// MARK: - ApplicationDelegate
-
-protocol ApplicationDelegate: class {
-    var window: UIWindow? { get set }
-}

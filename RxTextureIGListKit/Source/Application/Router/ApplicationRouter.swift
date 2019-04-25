@@ -9,27 +9,35 @@
 import Pure
 import UIKit
 
-final class ApplicationRouter: ApplicationRouterType, FactoryModule {
+final class ApplicationRouter: ApplicationRouterType {
 
     // MARK: - Property
 
     let navigationController: UINavigationController
+    let rootTabBarRouter: RootTabBarRouterType
 
     // MARK: - Lifecycle
 
-    init(dependency: Dependency, payload: ()) {
+    required init(dependency: Dependency, payload: Payload) {
         self.navigationController = dependency.navigationController
+        self.rootTabBarRouter = dependency.rootTabBarRouter
+        super.init(dependency: dependency, payload: payload)
     }
 
     // MAKR: - ApplicationRouter
 
-    func presentRoot() { }
+    override var rootViewController: UIViewController { return navigationController }
+
+    override func presentRoot() {
+        rootTabBarRouter.presentUnsplash()
+    }
 }
 
 // MARK: - Dependency
 
-extension ApplicationRouter {
-    struct Dependency {
-        let navigationController: UINavigationController
+extension ApplicationRouter.Dependency {
+    init() {
+        self.navigationController = BaseNavigationController()
+        self.rootTabBarRouter = .init(dependency: .init())
     }
 }

@@ -22,6 +22,20 @@
 		60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */; };
 		60DF31AA227172E000E05C00 /* StubApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31A9227172E000E05C00 /* StubApplication.swift */; };
 		60DF31AC2271777E00E05C00 /* AppDelegateSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31AB2271777E00E05C00 /* AppDelegateSpecs.swift */; };
+		60DF31B422717BD800E05C00 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31B322717BD800E05C00 /* BaseNavigationController.swift */; };
+		60DF31B622717BEB00E05C00 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31B522717BEB00E05C00 /* BaseViewController.swift */; };
+		60DF31B922717C3800E05C00 /* RootTabBarRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31B822717C3800E05C00 /* RootTabBarRouterType.swift */; };
+		60DF31BB22717E3600E05C00 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31BA22717E3600E05C00 /* RootTabBarController.swift */; };
+		60DF31BE22717F5000E05C00 /* UnsplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31BD22717F5000E05C00 /* UnsplashViewController.swift */; };
+		60DF31C022717F9400E05C00 /* RootTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31BF22717F9400E05C00 /* RootTabBarRouter.swift */; };
+		60DF31C82271A29100E05C00 /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31C72271A29100E05C00 /* Swift.swift */; };
+		60DF31CA2271A94C00E05C00 /* RootRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31C92271A94C00E05C00 /* RootRouterType.swift */; };
+		60DF31CC2271AA6200E05C00 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31CB2271AA6200E05C00 /* BaseRouter.swift */; };
+		60DF31CE2271AA8000E05C00 /* BaseRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31CD2271AA8000E05C00 /* BaseRootRouter.swift */; };
+		60DF31D72271AE1E00E05C00 /* StubRootTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31D62271AE1E00E05C00 /* StubRootTabBarRouter.swift */; };
+		60DF31DC2271AF1A00E05C00 /* ApplicationSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31DB2271AF1A00E05C00 /* ApplicationSpecs.swift */; };
+		60DF31DE2271B24800E05C00 /* StubApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31DD2271B24800E05C00 /* StubApplicationDelegate.swift */; };
+		60DF31E02271B26000E05C00 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31DF2271B26000E05C00 /* ApplicationDelegate.swift */; };
 		B906E05DB3684505E7C74508 /* Pods_RxTextureIGListKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC307ADC221A30FD44DC27BF /* Pods_RxTextureIGListKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +72,20 @@
 		60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApplicationRouter.swift; sourceTree = "<group>"; };
 		60DF31A9227172E000E05C00 /* StubApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApplication.swift; sourceTree = "<group>"; };
 		60DF31AB2271777E00E05C00 /* AppDelegateSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpecs.swift; sourceTree = "<group>"; };
+		60DF31B322717BD800E05C00 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		60DF31B522717BEB00E05C00 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		60DF31B822717C3800E05C00 /* RootTabBarRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarRouterType.swift; sourceTree = "<group>"; };
+		60DF31BA22717E3600E05C00 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		60DF31BD22717F5000E05C00 /* UnsplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashViewController.swift; sourceTree = "<group>"; };
+		60DF31BF22717F9400E05C00 /* RootTabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarRouter.swift; sourceTree = "<group>"; };
+		60DF31C72271A29100E05C00 /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
+		60DF31C92271A94C00E05C00 /* RootRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterType.swift; sourceTree = "<group>"; };
+		60DF31CB2271AA6200E05C00 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		60DF31CD2271AA8000E05C00 /* BaseRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRootRouter.swift; sourceTree = "<group>"; };
+		60DF31D62271AE1E00E05C00 /* StubRootTabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubRootTabBarRouter.swift; sourceTree = "<group>"; };
+		60DF31DB2271AF1A00E05C00 /* ApplicationSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSpecs.swift; sourceTree = "<group>"; };
+		60DF31DD2271B24800E05C00 /* StubApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApplicationDelegate.swift; sourceTree = "<group>"; };
+		60DF31DF2271B26000E05C00 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
 		623A189950E5F01D6CADFA96 /* Pods_RxTextureIGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CE7E5C67FF640D65F0FC97 /* Pods-RxTextureIGListKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextureIGListKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxTextureIGListKitTests/Pods-RxTextureIGListKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC307ADC221A30FD44DC27BF /* Pods_RxTextureIGListKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +178,7 @@
 				60DF31932271683000E05C00 /* Common */,
 				60DF318D227167F200E05C00 /* AppDelegate */,
 				60DF318E227167F800E05C00 /* Application */,
+				60DF31AE22717B6700E05C00 /* Scene */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -178,6 +207,7 @@
 			children = (
 				60DF31AD22717B3600E05C00 /* Router */,
 				60DF318F2271680300E05C00 /* ApplicationType.swift */,
+				60DF31DF2271B26000E05C00 /* ApplicationDelegate.swift */,
 				60DF31982271688600E05C00 /* Application.swift */,
 			);
 			path = Application;
@@ -187,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				60DF31972271685300E05C00 /* Router */,
+				60DF31B222717BCF00E05C00 /* Base */,
+				60DF31C72271A29100E05C00 /* Swift.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -195,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				60DF31952271685000E05C00 /* RouterType.swift */,
+				60DF31C92271A94C00E05C00 /* RootRouterType.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -204,6 +237,7 @@
 			children = (
 				60DF31A222716FAF00E05C00 /* AppDelegate */,
 				60DF31A62271714500E05C00 /* Application */,
+				60DF31D22271ADF900E05C00 /* Scene */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -229,8 +263,10 @@
 		60DF31A62271714500E05C00 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				60DF31DA2271AF0E00E05C00 /* Router */,
 				60DF31A9227172E000E05C00 /* StubApplication.swift */,
-				60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */,
+				60DF31DD2271B24800E05C00 /* StubApplicationDelegate.swift */,
+				60DF31DB2271AF1A00E05C00 /* ApplicationSpecs.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -240,6 +276,116 @@
 			children = (
 				60DF31912271682E00E05C00 /* ApplicationRouterType.swift */,
 				60DF319C22716B9A00E05C00 /* ApplicationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31AE22717B6700E05C00 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31AF22717B7600E05C00 /* Root */,
+				60DF31BC22717F3100E05C00 /* Unsplash */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		60DF31AF22717B7600E05C00 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31C12271805800E05C00 /* RootTabBar */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		60DF31B222717BCF00E05C00 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31D92271AEE200E05C00 /* UIKit */,
+				60DF31D82271AEDB00E05C00 /* Router */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		60DF31B722717C2100E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31B822717C3800E05C00 /* RootTabBarRouterType.swift */,
+				60DF31BF22717F9400E05C00 /* RootTabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31BC22717F3100E05C00 /* Unsplash */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31BD22717F5000E05C00 /* UnsplashViewController.swift */,
+			);
+			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		60DF31C12271805800E05C00 /* RootTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31B722717C2100E05C00 /* Router */,
+				60DF31BA22717E3600E05C00 /* RootTabBarController.swift */,
+			);
+			path = RootTabBar;
+			sourceTree = "<group>";
+		};
+		60DF31D22271ADF900E05C00 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31D32271AE0300E05C00 /* Root */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		60DF31D32271AE0300E05C00 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31D42271AE0600E05C00 /* RootTabBar */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		60DF31D42271AE0600E05C00 /* RootTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31D52271AE0D00E05C00 /* Router */,
+			);
+			path = RootTabBar;
+			sourceTree = "<group>";
+		};
+		60DF31D52271AE0D00E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31D62271AE1E00E05C00 /* StubRootTabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31D82271AEDB00E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31CB2271AA6200E05C00 /* BaseRouter.swift */,
+				60DF31CD2271AA8000E05C00 /* BaseRootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31D92271AEE200E05C00 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31B522717BEB00E05C00 /* BaseViewController.swift */,
+				60DF31B322717BD800E05C00 /* BaseNavigationController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		60DF31DA2271AF0E00E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -494,12 +640,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DF319B22716A8700E05C00 /* AppDelegateType.swift in Sources */,
+				60DF31BB22717E3600E05C00 /* RootTabBarController.swift in Sources */,
+				60DF31BE22717F5000E05C00 /* UnsplashViewController.swift in Sources */,
 				60DF31992271688700E05C00 /* Application.swift in Sources */,
+				60DF31C022717F9400E05C00 /* RootTabBarRouter.swift in Sources */,
+				60DF31B622717BEB00E05C00 /* BaseViewController.swift in Sources */,
+				60DF31CA2271A94C00E05C00 /* RootRouterType.swift in Sources */,
 				60DF319F22716F4400E05C00 /* main.swift in Sources */,
 				60DF31902271680300E05C00 /* ApplicationType.swift in Sources */,
+				60DF31CE2271AA8000E05C00 /* BaseRootRouter.swift in Sources */,
+				60DF31CC2271AA6200E05C00 /* BaseRouter.swift in Sources */,
+				60DF31B922717C3800E05C00 /* RootTabBarRouterType.swift in Sources */,
+				60DF31E02271B26000E05C00 /* ApplicationDelegate.swift in Sources */,
 				60DF316A22715EBC00E05C00 /* AppDelegate.swift in Sources */,
 				60DF319D22716B9A00E05C00 /* ApplicationRouter.swift in Sources */,
 				60DF31962271685000E05C00 /* RouterType.swift in Sources */,
+				60DF31B422717BD800E05C00 /* BaseNavigationController.swift in Sources */,
+				60DF31C82271A29100E05C00 /* Swift.swift in Sources */,
 				60DF31922271682E00E05C00 /* ApplicationRouterType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +666,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DF31A522716FEB00E05C00 /* StubAppDelegate.swift in Sources */,
+				60DF31D72271AE1E00E05C00 /* StubRootTabBarRouter.swift in Sources */,
 				60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */,
+				60DF31DE2271B24800E05C00 /* StubApplicationDelegate.swift in Sources */,
+				60DF31DC2271AF1A00E05C00 /* ApplicationSpecs.swift in Sources */,
 				60DF31AA227172E000E05C00 /* StubApplication.swift in Sources */,
 				60DF31AC2271777E00E05C00 /* AppDelegateSpecs.swift in Sources */,
 			);

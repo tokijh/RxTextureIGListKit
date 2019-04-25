@@ -6,6 +6,23 @@
 //  Copyright © 2019 tokijh. All rights reserved.
 //
 
-protocol ApplicationRouterType: Router {
-    func presentRoot()
+import Pure
+import UIKit
+
+class ApplicationRouterType: BaseRootRouter, FactoryModule {
+
+    required init(dependency: Dependency, payload: Payload) { }
+
+    func presentRoot() {
+        abstractMethod()
+    }
+}
+
+// MARK: - Dependency
+
+extension ApplicationRouterType {
+    struct Dependency {
+        let navigationController: UINavigationController
+        let rootTabBarRouter: RootTabBarRouterType
+    }
 }

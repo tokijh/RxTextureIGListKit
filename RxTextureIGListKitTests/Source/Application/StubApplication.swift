@@ -46,7 +46,7 @@ final class StubApplication: ApplicationType, FactoryModule {
     var router: ApplicationRouterType { return depenendcy.router }
 }
 
-// MARK: - Dependency
+// MARK: - Stub
 
 extension StubApplication {
     typealias Dependency = Application.Dependency

@@ -57,11 +57,7 @@ extension AppDelegate {
 
         static func create() -> Dependency {
             let application: ApplicationType = {
-                let router: ApplicationRouterType = ApplicationRouter
-                    .Factory(
-                        dependency: .init(navigationController: UINavigationController())
-                    )
-                    .create()
+                let router: ApplicationRouterType = ApplicationRouter(dependency: .init())
                 return Application.Factory(dependency: .init(router: router)).create()
             }()
 
