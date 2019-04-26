@@ -20,24 +20,24 @@ final class UnsplashRouterTypeSpecs: QuickSpec {
         // MARK: - Property
 
         var navigationController: UINavigationController!
-        var unsplashListVCFactory: StubFactory<UnsplashListViewController>!
+        var unsplashPhotoFeedListVCFactory: StubFactory<UnsplashPhotoFeedListViewController>!
         var router: UnsplashRouterType!
 
         beforeEach {
             navigationController = .init()
-            unsplashListVCFactory = .stub()
+            unsplashPhotoFeedListVCFactory = .stub()
 
             router = UnsplashRouterType(
                 dependency: .init(
                     navigationController: navigationController,
-                    unsplashListVCFactory: unsplashListVCFactory
+                    unsplashPhotoFeedListVCFactory: unsplashPhotoFeedListVCFactory
                 )
             )
         }
 
-        describe("when presentUnsplashList") {
+        describe("when presentUnsplashPhotoFeedList") {
             let when = {
-                router.presentUnsplashList()
+                router.presentUnsplashPhotoFeedList()
             }
 
             it("should be fatalError") {

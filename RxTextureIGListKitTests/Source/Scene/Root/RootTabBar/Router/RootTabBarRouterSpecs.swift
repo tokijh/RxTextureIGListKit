@@ -10,6 +10,7 @@
 
 import Nimble
 import Quick
+import Stubber
 
 final class RootTabBarRouterSpecs: QuickSpec {
 
@@ -19,31 +20,28 @@ final class RootTabBarRouterSpecs: QuickSpec {
 
         // MARK: - Property
 
-        var unsplashViewController: UIViewController!
         var tabBarController: UITabBarController!
+        var unsplashRouter: StubUnsplashRouter!
         var router: RootTabBarRouter!
 
-        beforeEach {
-            unsplashViewController = UIViewController()
-            tabBarController = UITabBarController()
-
+        let initRouter = {
             router = RootTabBarRouter(
                 dependency: .init(
                     tabBarController: tabBarController,
-                    unsplashViewController: unsplashViewController
+                    unsplashRouter: unsplashRouter
                 )
             )
         }
 
+        beforeEach {
+            tabBarController = UITabBarController()
+            unsplashRouter = .stub()
+
+            initRouter()
+        }
+
         describe("when init") {
-            let when = {
-                router = RootTabBarRouter(
-                    dependency: .init(
-                        tabBarController: tabBarController,
-                        unsplashViewController: unsplashViewController
-                    )
-                )
-            }
+            let when = initRouter
 
             it("rootViewController to equal tabBarController") {
                 when()
@@ -52,7 +50,9 @@ final class RootTabBarRouterSpecs: QuickSpec {
             }
 
             it("tabBarController.viewControllers to equal expected") {
-                let expected = [unsplashViewController]
+                let unsplashRootViewController = UINavigationController()
+                Stubber.register(unsplashRouter.getRootViewController) { unsplashRootViewController }
+                let expected = [unsplashRootViewController]
 
                 when()
 
@@ -65,10 +65,10 @@ final class RootTabBarRouterSpecs: QuickSpec {
                 router.presentUnsplash()
             }
 
-            it("tabBarController.selectedViewControler to equal unsplashViewController") {
+            it("tabBarController.selectedViewControler to equal unsplashRouter.rootViewController") {
                 when()
 
-                expect(tabBarController.selectedViewController).to(equal(unsplashViewController))
+                expect(tabBarController.selectedViewController).to(equal(unsplashRouter.rootViewController))
             }
         }
 
@@ -86,10 +86,10 @@ final class RootTabBarRouterSpecs: QuickSpec {
                     expect(dependency.tabBarController is RootTabBarController).to(beTrue())
                 }
 
-                it("unsplashViewController is UnsplashViewController") {
+                it("unsplashViewController is UnsplashRouter") {
                     when()
 
-                    expect(dependency.unsplashViewController is UnsplashViewController).to(beTrue())
+                    expect(dependency.unsplashRouter is UnsplashRouter).to(beTrue())
                 }
             }
         }

@@ -20,6 +20,6 @@ class RootTabBarRouterType: BaseRootRouter, FactoryModule {
 extension RootTabBarRouterType {
     struct Dependency {
         let tabBarController: UITabBarController
-        let unsplashViewController: UIViewController
+        let unsplashRouter: UnsplashRouterType
     }
 }

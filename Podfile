@@ -22,8 +22,8 @@ target 'RxTextureIGListKit' do
   # UI
   pod 'SnapKit'
   pod 'RxViewController'
-  pod 'Texture'
-  pod 'Texture/IGListKit'
+  pod 'Texture', :git => 'https://github.com/TextureGroup/Texture.git', :commit => '15fb7e0c1f651da59d1b9c68abcd98d953ff2f4a'
+  pod 'Texture/IGListKit', :git => 'https://github.com/TextureGroup/Texture.git', :commit => '15fb7e0c1f651da59d1b9c68abcd98d953ff2f4a'
   pod 'IGListKit'
 
   # Misc.

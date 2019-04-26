@@ -8,11 +8,11 @@
 
 import UIKit
 
-class UnsplashRouterType: Router, FactoryModule {
+class UnsplashRouterType: BaseRootRouter, FactoryModule {
 
     required init(dependency: Dependency) { }
 
-    func presentUnsplashList() {
+    func presentUnsplashPhotoFeedList() {
         abstractMethod()
     }
 }
@@ -20,6 +20,6 @@ class UnsplashRouterType: Router, FactoryModule {
 extension UnsplashRouterType {
     struct Dependency {
         let navigationController: UINavigationController
-        let unsplashListVCFactory: Factory<UnsplashListViewController>
+        let unsplashPhotoFeedListVCFactory: RxTextureIGListKit.Factory<UnsplashPhotoFeedListViewController>
     }
 }

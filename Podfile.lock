@@ -5,20 +5,20 @@ PODS:
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
   - Nimble (7.3.4)
-  - PINCache (3.0.1-beta.6):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
-    - PINCache/Core (= 3.0.1-beta.6)
-  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+  - PINCache (3.0.1-beta.7):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.7)
+    - PINCache/Core (= 3.0.1-beta.7)
+  - PINCache/Arc-exception-safe (3.0.1-beta.7):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.6):
-    - PINOperation (~> 1.1.0)
+  - PINCache/Core (3.0.1-beta.7):
+    - PINOperation (~> 1.1.1)
   - PINOperation (1.1.1)
-  - PINRemoteImage/Core (3.0.0-beta.13):
+  - PINRemoteImage/Core (3.0.0-beta.14):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.13):
+  - PINRemoteImage/iOS (3.0.0-beta.14):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.13):
-    - PINCache (= 3.0.1-beta.6)
+  - PINRemoteImage/PINCache (3.0.0-beta.14):
+    - PINCache (= 3.0.1-beta.7)
     - PINRemoteImage/Core
   - Quick (2.1.0)
   - ReactorKit (1.2.1):
@@ -61,7 +61,7 @@ PODS:
   - Texture/Photos (2.8):
     - Texture/Core
   - Texture/PINRemoteImage (2.8):
-    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+    - PINRemoteImage/iOS (= 3.0.0-beta.14)
     - PINRemoteImage/PINCache
     - Texture/Core
   - Texture/Video (2.8):
@@ -80,8 +80,8 @@ DEPENDENCIES:
   - SnapKit
   - Stubber
   - SwiftLint
-  - Texture
-  - Texture/IGListKit
+  - Texture (from `https://github.com/TextureGroup/Texture.git`, commit `15fb7e0c1f651da59d1b9c68abcd98d953ff2f4a`)
+  - Texture/IGListKit (from `https://github.com/TextureGroup/Texture.git`, commit `15fb7e0c1f651da59d1b9c68abcd98d953ff2f4a`)
   - Then
 
 SPEC REPOS:
@@ -102,15 +102,24 @@ SPEC REPOS:
     - SnapKit
     - Stubber
     - SwiftLint
-    - Texture
     - Then
+
+EXTERNAL SOURCES:
+  Texture:
+    :commit: 15fb7e0c1f651da59d1b9c68abcd98d953ff2f4a
+    :git: https://github.com/TextureGroup/Texture.git
+
+CHECKOUT OPTIONS:
+  Texture:
+    :commit: 15fb7e0c1f651da59d1b9c68abcd98d953ff2f4a
+    :git: https://github.com/TextureGroup/Texture.git
 
 SPEC CHECKSUMS:
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINCache: 7cb9ae068c8f655717f7c644ef1dff9fd573e979
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
-  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  PINRemoteImage: 81bbff853acc71c6de9e106e9e489a791b8bbb08
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
@@ -122,9 +131,9 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Stubber: 241303d241ad91f70d6d6d20cdaeae5255c82b57
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
-  Texture: fc6e0157201f3a6e503d364c147b1872e365cef4
+  Texture: 3ac8be7a23e3b478fa1f227bf7a4da083806038d
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: f70943ba01541e9d5a8520ae14db2da07d55ecf6
+PODFILE CHECKSUM: fd491ecb07865674da0a7b177c4b29ddad779779
 
 COCOAPODS: 1.6.0

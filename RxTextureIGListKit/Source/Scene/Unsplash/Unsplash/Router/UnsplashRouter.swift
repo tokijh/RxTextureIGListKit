@@ -12,19 +12,22 @@ final class UnsplashRouter: UnsplashRouterType {
 
     // MARK: - Property
 
-    unowned let navigationController: UINavigationController
-    let unsplashListVCFactory: Factory<UnsplashListViewController>
+    let navigationController: UINavigationController
+    let unsplashPhotoFeedListVCFactory: RxTextureIGListKit.Factory<UnsplashPhotoFeedListViewController>
 
     // MARK: - Lifecycle
 
     required init(dependency: Dependency) {
         self.navigationController = dependency.navigationController
-        self.unsplashListVCFactory = dependency.unsplashListVCFactory
+        self.unsplashPhotoFeedListVCFactory = dependency.unsplashPhotoFeedListVCFactory
         super.init(dependency: dependency)
+        presentUnsplashPhotoFeedList()
     }
 
-    override func presentUnsplashList() {
-        let vc = unsplashListVCFactory.create()
+    override var rootViewController: UIViewController { return navigationController }
+
+    override func presentUnsplashPhotoFeedList() {
+        let vc = unsplashPhotoFeedListVCFactory.create()
         navigationController.pushViewController(vc, animated: true)
     }
 }
@@ -32,8 +35,13 @@ final class UnsplashRouter: UnsplashRouterType {
 // MARK: - Dependency
 
 extension UnsplashRouter.Dependency {
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-        self.unsplashListVCFactory = Factory<UnsplashListViewController>()
+    init() {
+        self.navigationController = UnsplashViewController()
+        let unsplashPhotoFeedListViewReactor = UnsplashPhotoFeedListViewReactor(
+            dependency: .init(service: UnsplashService())
+        )
+        self.unsplashPhotoFeedListVCFactory = RxTextureIGListKit.Factory<UnsplashPhotoFeedListViewController>(
+            dependency: .init(reactor: unsplashPhotoFeedListViewReactor)
+        )
     }
 }

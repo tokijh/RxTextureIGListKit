@@ -36,8 +36,8 @@ extension RootTabBarRouterType {
 extension RootTabBarRouterType.Dependency {
     static func stub(
         tabBarController: UITabBarController = UITabBarController(),
-        unsplashViewController: UIViewController = UIViewController()
+        unsplashRouter: UnsplashRouterType = .stub()
         ) -> RootTabBarRouterType.Dependency {
-        return .init(tabBarController: tabBarController, unsplashViewController: unsplashViewController)
+        return .init(tabBarController: tabBarController, unsplashRouter: unsplashRouter)
     }
 }

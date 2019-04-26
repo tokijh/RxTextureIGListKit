@@ -19,34 +19,31 @@ final class UnsplashRouterSpecs: QuickSpec {
 
         // MARK: - Property
 
-        var navigationController: UINavigationController!
-        var unsplashListVCFactory: StubFactory<UnsplashListViewController>!
-        var router: UnsplashRouter!
+        describe("when init") {
+            var navigationController: UINavigationController!
+            var unsplashPhotoFeedListVCFactory: StubFactory<UnsplashPhotoFeedListViewController>!
 
-        beforeEach {
-            navigationController = .init()
-            unsplashListVCFactory = .stub()
-
-            router = UnsplashRouter(
-                dependency: .init(
-                    navigationController: navigationController,
-                    unsplashListVCFactory: unsplashListVCFactory
-                )
-            )
-        }
-
-        describe("when presentUnsplashList") {
-            let when = {
-                router.presentUnsplashList()
+            beforeEach {
+                navigationController = .init()
+                unsplashPhotoFeedListVCFactory = .stub(UnsplashPhotoFeedListViewController())
             }
 
-            it("navigationController.topViewController to equal unsplashListVC") {
-                let unsplashListVC = UnsplashListViewController()
-                unsplashListVCFactory.register(unsplashListVC)
+            let when = {
+                _ = UnsplashRouter(
+                    dependency: .stub(
+                        navigationController: navigationController,
+                        unsplashPhotoFeedListVCFactory: unsplashPhotoFeedListVCFactory
+                    )
+                )
+            }
+
+            it("navigationController.topViewController to equal unsplashPhotoFeedListVC") {
+                let unsplashPhotoFeedListVC = UnsplashPhotoFeedListViewController()
+                unsplashPhotoFeedListVCFactory.register(unsplashPhotoFeedListVC)
 
                 when()
 
-                expect(navigationController.topViewController).to(equal(unsplashListVC))
+                expect(navigationController.topViewController).to(equal(unsplashPhotoFeedListVC))
             }
         }
 
@@ -54,26 +51,14 @@ final class UnsplashRouterSpecs: QuickSpec {
             var dependency: UnsplashRouter.Dependency!
 
             describe("when init") {
-                var navigationController: UINavigationController!
-
                 let when = {
-                    dependency = .init(navigationController: navigationController)
+                    dependency = .init()
                 }
 
-                beforeEach {
-                    navigationController = .init()
-                }
-
-                it("navigationController is inputted navigationController") {
+                it("unsplashPhotoFeedListVCFactory is not StubFactory") {
                     when()
 
-                    expect(dependency.navigationController).to(equal(navigationController))
-                }
-
-                it("unsplashListVCFactory is not StubFactory") {
-                    when()
-
-                    expect(dependency.unsplashListVCFactory is StubFactory).to(beFalse())
+                    expect(dependency.unsplashPhotoFeedListVCFactory is StubFactory).to(beFalse())
                 }
             }
         }

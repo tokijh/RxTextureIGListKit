@@ -19,18 +19,18 @@ final class RootTabBarRouterTypeSpecs: QuickSpec {
 
         // MARK: - Property
 
-        var unsplashViewController: UIViewController!
+        var unsplashRouter: StubUnsplashRouter!
         var tabBarController: UITabBarController!
         var router: RootTabBarRouterType!
 
         beforeEach {
-            unsplashViewController = UIViewController()
             tabBarController = UITabBarController()
+            unsplashRouter = .stub()
 
             router = RootTabBarRouterType(
                 dependency: .init(
                     tabBarController: tabBarController,
-                    unsplashViewController: unsplashViewController
+                    unsplashRouter: unsplashRouter
                 )
             )
         }
