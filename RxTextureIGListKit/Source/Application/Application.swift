@@ -35,6 +35,7 @@ final class Application: ApplicationType, FactoryModule {
     }
 
     private func setup() {
+        setupStyle()
         setupWindow()
     }
 
@@ -44,6 +45,10 @@ final class Application: ApplicationType, FactoryModule {
         window?.makeKeyAndVisible()
 
         router.presentRoot()
+    }
+
+    private func setupStyle() {
+        UIView.appearance().backgroundColor = UIColor.white
     }
 }
 

@@ -12,7 +12,7 @@ final class RootTabBarRouter: RootTabBarRouterType {
 
     // MARK: - Property
 
-    unowned let tabBarController: UITabBarController
+    let tabBarController: UITabBarController
     override var rootViewController: UIViewController { return tabBarController }
 
     let unsplashViewController: UIViewController

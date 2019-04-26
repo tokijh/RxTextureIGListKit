@@ -10,7 +10,6 @@
 
 import Nimble
 import Quick
-import Stubber
 
 final class RootTabBarRouterSpecs: QuickSpec {
 

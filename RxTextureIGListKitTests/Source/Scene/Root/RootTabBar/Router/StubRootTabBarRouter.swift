@@ -10,7 +10,20 @@
 
 import Stubber
 
-final class StubRootTabBarRouter: RootTabBarRouterType { }
+final class StubRootTabBarRouter: RootTabBarRouterType {
+
+    override var rootViewController: UIViewController { return getRootViewController() }
+
+    override func presentUnsplash() {
+        Stubber.invoke(self.presentUnsplash, args: (), default: ())
+    }
+}
+
+extension StubRootTabBarRouter {
+    func getRootViewController() -> UIViewController {
+        return Stubber.invoke(self.getRootViewController, args: (), default: UIViewController())
+    }
+}
 
 // MARK: - Dependency
 

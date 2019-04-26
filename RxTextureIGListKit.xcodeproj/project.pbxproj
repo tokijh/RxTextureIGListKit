@@ -12,6 +12,7 @@
 		60709C2B2271D65900E2A9D1 /* PayloadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */; };
 		60709C2D2271D71200E2A9D1 /* PayloadConfiguratorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */; };
 		60709C2F2271D71B00E2A9D1 /* PayloadConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2E2271D71B00E2A9D1 /* PayloadConfigurator.swift */; };
+		60709C31227296BB00E2A9D1 /* ApplicationRouterSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C30227296BB00E2A9D1 /* ApplicationRouterSpecs.swift */; };
 		60DF316A22715EBC00E05C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF316922715EBC00E05C00 /* AppDelegate.swift */; };
 		60DF317122715EBE00E05C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317022715EBE00E05C00 /* Assets.xcassets */; };
 		60DF317422715EBE00E05C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317222715EBE00E05C00 /* LaunchScreen.storyboard */; };
@@ -72,6 +73,7 @@
 		60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadFactory.swift; sourceTree = "<group>"; };
 		60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadConfiguratorModule.swift; sourceTree = "<group>"; };
 		60709C2E2271D71B00E2A9D1 /* PayloadConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadConfigurator.swift; sourceTree = "<group>"; };
+		60709C30227296BB00E2A9D1 /* ApplicationRouterSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouterSpecs.swift; sourceTree = "<group>"; };
 		60DF316622715EBC00E05C00 /* RxTextureIGListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTextureIGListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DF316922715EBC00E05C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DF317022715EBE00E05C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -423,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */,
+				60709C30227296BB00E2A9D1 /* ApplicationRouterSpecs.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -810,6 +813,7 @@
 				60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */,
 				60DF31F02271C91B00E05C00 /* UnsplashRouterSpecs.swift in Sources */,
 				60DF31DE2271B24800E05C00 /* StubApplicationDelegate.swift in Sources */,
+				60709C31227296BB00E2A9D1 /* ApplicationRouterSpecs.swift in Sources */,
 				60DF31DC2271AF1A00E05C00 /* ApplicationSpecs.swift in Sources */,
 				60DF31E22271B75200E05C00 /* RootTabBarRouterSpecs.swift in Sources */,
 				60DF31AA227172E000E05C00 /* StubApplication.swift in Sources */,

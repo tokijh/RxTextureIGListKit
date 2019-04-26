@@ -6,4 +6,15 @@
 //  Copyright © 2019 tokijh. All rights reserved.
 //
 
-final class UnsplashViewController: BaseNavigationController { }
+final class UnsplashViewController: BaseNavigationController {
+
+    override func setupView() {
+        setupTabBarItem()
+    }
+
+    // MARK: - TabBarItem
+
+    private func setupTabBarItem() {
+        tabBarItem.title = "Unsplash"
+    }
+}

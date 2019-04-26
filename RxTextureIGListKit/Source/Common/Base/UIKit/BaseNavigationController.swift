@@ -8,4 +8,12 @@
 
 import UIKit
 
-class BaseNavigationController: UINavigationController { }
+class BaseNavigationController: UINavigationController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+    }
+
+    func setupView() { }
+}

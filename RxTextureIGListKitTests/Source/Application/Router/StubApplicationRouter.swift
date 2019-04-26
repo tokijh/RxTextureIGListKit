@@ -43,9 +43,8 @@ extension ApplicationRouterType {
 
 extension ApplicationRouterType.Dependency {
     static func stub(
-        navigationController: UINavigationController = UINavigationController(),
         rootTabBarRouter: RootTabBarRouterType = .stub()
         ) -> ApplicationRouterType.Dependency {
-        return .init(navigationController: navigationController, rootTabBarRouter: rootTabBarRouter)
+        return .init(rootTabBarRouter: rootTabBarRouter)
     }
 }

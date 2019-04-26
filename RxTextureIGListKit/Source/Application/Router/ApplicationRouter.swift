@@ -12,20 +12,18 @@ final class ApplicationRouter: ApplicationRouterType {
 
     // MARK: - Property
 
-    let navigationController: UINavigationController
     let rootTabBarRouter: RootTabBarRouterType
 
     // MARK: - Lifecycle
 
     required init(dependency: Dependency) {
-        self.navigationController = dependency.navigationController
         self.rootTabBarRouter = dependency.rootTabBarRouter
         super.init(dependency: dependency)
     }
 
     // MAKR: - ApplicationRouter
 
-    override var rootViewController: UIViewController { return navigationController }
+    override var rootViewController: UIViewController { return rootTabBarRouter.rootViewController }
 
     override func presentRoot() {
         rootTabBarRouter.presentUnsplash()
@@ -36,7 +34,6 @@ final class ApplicationRouter: ApplicationRouterType {
 
 extension ApplicationRouter.Dependency {
     init() {
-        self.navigationController = BaseNavigationController()
-        self.rootTabBarRouter = .init(dependency: .init())
+        self.rootTabBarRouter = RootTabBarRouter(dependency: .init())
     }
 }

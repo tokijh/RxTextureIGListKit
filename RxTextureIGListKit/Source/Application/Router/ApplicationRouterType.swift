@@ -21,7 +21,6 @@ class ApplicationRouterType: BaseRootRouter, FactoryModule {
 
 extension ApplicationRouterType {
     struct Dependency {
-        let navigationController: UINavigationController
         let rootTabBarRouter: RootTabBarRouterType
     }
 }

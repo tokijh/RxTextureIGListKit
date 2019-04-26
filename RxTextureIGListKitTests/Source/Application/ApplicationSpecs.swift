@@ -68,7 +68,7 @@ final class ApplicationSpecs: QuickSpec {
 
                     expect(application.window?.rootViewController).to(equal(router.rootViewController))
                 }
-                it("router.presentRoot should be call onece") {
+                it("router.presentRoot should be call one time") {
                     Stubber.register(router.presentRoot) { }
 
                     when()
