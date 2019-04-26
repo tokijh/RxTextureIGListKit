@@ -15,15 +15,25 @@ final class RootTabBarRouter: RootTabBarRouterType {
     unowned let tabBarController: UITabBarController
     override var rootViewController: UIViewController { return tabBarController }
 
+    let unsplashViewController: UIViewController
+
     // MARK: - Lifecycle
 
-    required init(dependency: Dependency, payload: Payload) {
+    required init(dependency: Dependency) {
         self.tabBarController = dependency.tabBarController
-        super.init(dependency: dependency, payload: payload)
+        self.unsplashViewController = dependency.unsplashViewController
+        super.init(dependency: dependency)
+        setupTabBarController()
     }
 
     override func presentUnsplash() {
+        tabBarController.selectedViewController = unsplashViewController
+    }
+}
 
+extension RootTabBarRouter {
+    private func setupTabBarController() {
+        tabBarController.viewControllers = [unsplashViewController]
     }
 }
 
@@ -32,5 +42,6 @@ final class RootTabBarRouter: RootTabBarRouterType {
 extension RootTabBarRouter.Dependency {
     init() {
         self.tabBarController = RootTabBarController()
+        self.unsplashViewController = UnsplashViewController()
     }
 }

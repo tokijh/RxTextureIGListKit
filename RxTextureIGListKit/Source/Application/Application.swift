@@ -8,7 +8,6 @@
 
 import UIKit
 
-import Pure
 import Then
 
 final class Application: ApplicationType, FactoryModule {
@@ -19,7 +18,7 @@ final class Application: ApplicationType, FactoryModule {
 
     // MARK: - Lifecycle
 
-    init(dependency: Dependency, payload: ()) {
+    init(dependency: Dependency) {
         self.router = dependency.router
     }
 

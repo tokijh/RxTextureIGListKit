@@ -10,7 +10,6 @@
 
 import UIKit
 
-import Pure
 import Stubber
 
 final class StubApplication: ApplicationType, FactoryModule {
@@ -21,7 +20,7 @@ final class StubApplication: ApplicationType, FactoryModule {
 
     // MARK: - Lifecycle
 
-    init(dependency: Dependency = .stub(), payload: () = ()) {
+    init(dependency: Dependency = .stub()) {
         self.depenendcy = dependency
     }
 

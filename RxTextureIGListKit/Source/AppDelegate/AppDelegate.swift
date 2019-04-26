@@ -8,8 +8,6 @@
 
 import UIKit
 
-import Pure
-
 final class AppDelegate: UIResponder, AppDelegateType, FactoryModule {
 
     // MARK: - Lifecycle
@@ -19,7 +17,7 @@ final class AppDelegate: UIResponder, AppDelegateType, FactoryModule {
         self.init(dependency: dependency)
     }
 
-    init(dependency: Dependency, payload: ()) {
+    init(dependency: Dependency) {
         self.application = dependency.application
         super.init()
         setup()

@@ -10,7 +10,6 @@
 
 import UIKit
 
-import Pure
 import Stubber
 
 final class StubAppDelegate: UIResponder, AppDelegateType, FactoryModule {
@@ -25,7 +24,7 @@ final class StubAppDelegate: UIResponder, AppDelegateType, FactoryModule {
         self.init(dependency: .stub())
     }
 
-    init(dependency: Dependency = .stub(), payload: () = ()) {
+    init(dependency: Dependency = .stub()) {
         self.depenendcy = dependency
     }
 

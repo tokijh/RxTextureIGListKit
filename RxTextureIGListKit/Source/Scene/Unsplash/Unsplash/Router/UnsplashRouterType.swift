@@ -1,5 +1,5 @@
 //
-//  ApplicationRouterType.swift
+//  UnsplashRouterType.swift
 //  RxTextureIGListKit
 //
 //  Created by 윤중현 on 25/04/2019.
@@ -8,20 +8,18 @@
 
 import UIKit
 
-class ApplicationRouterType: BaseRootRouter, FactoryModule {
+class UnsplashRouterType: Router, FactoryModule {
 
     required init(dependency: Dependency) { }
 
-    func presentRoot() {
+    func presentUnsplashList() {
         abstractMethod()
     }
 }
 
-// MARK: - Dependency
-
-extension ApplicationRouterType {
+extension UnsplashRouterType {
     struct Dependency {
         let navigationController: UINavigationController
-        let rootTabBarRouter: RootTabBarRouterType
+        let unsplashListVCFactory: Factory<UnsplashListViewController>
     }
 }

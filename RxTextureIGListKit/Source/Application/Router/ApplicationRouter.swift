@@ -6,7 +6,6 @@
 //  Copyright © 2019 tokijh. All rights reserved.
 //
 
-import Pure
 import UIKit
 
 final class ApplicationRouter: ApplicationRouterType {
@@ -18,10 +17,10 @@ final class ApplicationRouter: ApplicationRouterType {
 
     // MARK: - Lifecycle
 
-    required init(dependency: Dependency, payload: Payload) {
+    required init(dependency: Dependency) {
         self.navigationController = dependency.navigationController
         self.rootTabBarRouter = dependency.rootTabBarRouter
-        super.init(dependency: dependency, payload: payload)
+        super.init(dependency: dependency)
     }
 
     // MAKR: - ApplicationRouter

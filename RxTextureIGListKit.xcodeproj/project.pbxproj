@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3A6690B02AB25D7B637EE972 /* Pods_RxTextureIGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623A189950E5F01D6CADFA96 /* Pods_RxTextureIGListKit.framework */; };
+		60709C292271D65100E2A9D1 /* PayloadFactoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C282271D65100E2A9D1 /* PayloadFactoryModule.swift */; };
+		60709C2B2271D65900E2A9D1 /* PayloadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */; };
+		60709C2D2271D71200E2A9D1 /* PayloadConfiguratorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */; };
+		60709C2F2271D71B00E2A9D1 /* PayloadConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2E2271D71B00E2A9D1 /* PayloadConfigurator.swift */; };
 		60DF316A22715EBC00E05C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF316922715EBC00E05C00 /* AppDelegate.swift */; };
 		60DF317122715EBE00E05C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317022715EBE00E05C00 /* Assets.xcassets */; };
 		60DF317422715EBE00E05C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317222715EBE00E05C00 /* LaunchScreen.storyboard */; };
@@ -36,6 +40,18 @@
 		60DF31DC2271AF1A00E05C00 /* ApplicationSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31DB2271AF1A00E05C00 /* ApplicationSpecs.swift */; };
 		60DF31DE2271B24800E05C00 /* StubApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31DD2271B24800E05C00 /* StubApplicationDelegate.swift */; };
 		60DF31E02271B26000E05C00 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31DF2271B26000E05C00 /* ApplicationDelegate.swift */; };
+		60DF31E22271B75200E05C00 /* RootTabBarRouterSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31E12271B75200E05C00 /* RootTabBarRouterSpecs.swift */; };
+		60DF31E42271C0AF00E05C00 /* UnsplashListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31E32271C0AF00E05C00 /* UnsplashListViewController.swift */; };
+		60DF31E92271C17100E05C00 /* UnsplashRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31E82271C17100E05C00 /* UnsplashRouterType.swift */; };
+		60DF31EB2271C1B300E05C00 /* UnsplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31EA2271C1B300E05C00 /* UnsplashRouter.swift */; };
+		60DF31F02271C91B00E05C00 /* UnsplashRouterSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31EF2271C91B00E05C00 /* UnsplashRouterSpecs.swift */; };
+		60DF31FD2271D3F500E05C00 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31F82271D3F500E05C00 /* Configurator.swift */; };
+		60DF31FE2271D3F500E05C00 /* ConfiguratorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31F92271D3F500E05C00 /* ConfiguratorModule.swift */; };
+		60DF31FF2271D3F500E05C00 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31FA2271D3F500E05C00 /* Module.swift */; };
+		60DF32002271D3F500E05C00 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31FB2271D3F500E05C00 /* Factory.swift */; };
+		60DF32012271D3F500E05C00 /* FactoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31FC2271D3F500E05C00 /* FactoryModule.swift */; };
+		60DF32032271D55F00E05C00 /* StubFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF31F52271D00A00E05C00 /* StubFactory.swift */; };
+		60DF32052271D5A700E05C00 /* PayloadModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF32042271D5A700E05C00 /* PayloadModule.swift */; };
 		B906E05DB3684505E7C74508 /* Pods_RxTextureIGListKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC307ADC221A30FD44DC27BF /* Pods_RxTextureIGListKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +68,10 @@
 /* Begin PBXFileReference section */
 		01C35A126A8F3EBDF3E400D5 /* Pods-RxTextureIGListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextureIGListKit.release.xcconfig"; path = "Target Support Files/Pods-RxTextureIGListKit/Pods-RxTextureIGListKit.release.xcconfig"; sourceTree = "<group>"; };
 		3E8C9B94C7098C67876C9713 /* Pods-RxTextureIGListKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextureIGListKit.debug.xcconfig"; path = "Target Support Files/Pods-RxTextureIGListKit/Pods-RxTextureIGListKit.debug.xcconfig"; sourceTree = "<group>"; };
+		60709C282271D65100E2A9D1 /* PayloadFactoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadFactoryModule.swift; sourceTree = "<group>"; };
+		60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadFactory.swift; sourceTree = "<group>"; };
+		60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadConfiguratorModule.swift; sourceTree = "<group>"; };
+		60709C2E2271D71B00E2A9D1 /* PayloadConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadConfigurator.swift; sourceTree = "<group>"; };
 		60DF316622715EBC00E05C00 /* RxTextureIGListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTextureIGListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DF316922715EBC00E05C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DF317022715EBE00E05C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +106,18 @@
 		60DF31DB2271AF1A00E05C00 /* ApplicationSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSpecs.swift; sourceTree = "<group>"; };
 		60DF31DD2271B24800E05C00 /* StubApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubApplicationDelegate.swift; sourceTree = "<group>"; };
 		60DF31DF2271B26000E05C00 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
+		60DF31E12271B75200E05C00 /* RootTabBarRouterSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarRouterSpecs.swift; sourceTree = "<group>"; };
+		60DF31E32271C0AF00E05C00 /* UnsplashListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashListViewController.swift; sourceTree = "<group>"; };
+		60DF31E82271C17100E05C00 /* UnsplashRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashRouterType.swift; sourceTree = "<group>"; };
+		60DF31EA2271C1B300E05C00 /* UnsplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashRouter.swift; sourceTree = "<group>"; };
+		60DF31EF2271C91B00E05C00 /* UnsplashRouterSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashRouterSpecs.swift; sourceTree = "<group>"; };
+		60DF31F52271D00A00E05C00 /* StubFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubFactory.swift; sourceTree = "<group>"; };
+		60DF31F82271D3F500E05C00 /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		60DF31F92271D3F500E05C00 /* ConfiguratorModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguratorModule.swift; sourceTree = "<group>"; };
+		60DF31FA2271D3F500E05C00 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		60DF31FB2271D3F500E05C00 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		60DF31FC2271D3F500E05C00 /* FactoryModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryModule.swift; sourceTree = "<group>"; };
+		60DF32042271D5A700E05C00 /* PayloadModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadModule.swift; sourceTree = "<group>"; };
 		623A189950E5F01D6CADFA96 /* Pods_RxTextureIGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CE7E5C67FF640D65F0FC97 /* Pods-RxTextureIGListKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTextureIGListKitTests.release.xcconfig"; path = "Target Support Files/Pods-RxTextureIGListKitTests/Pods-RxTextureIGListKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC307ADC221A30FD44DC27BF /* Pods_RxTextureIGListKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTextureIGListKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +198,7 @@
 		60DF317D22715EBE00E05C00 /* RxTextureIGListKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				60DF31F32271CFF300E05C00 /* Common */,
 				60DF31A022716F8600E05C00 /* Source */,
 				60DF31A122716F8C00E05C00 /* Resource */,
 			);
@@ -216,6 +249,7 @@
 		60DF31932271683000E05C00 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				60DF31F72271D3E400E05C00 /* Pure */,
 				60DF31972271685300E05C00 /* Router */,
 				60DF31B222717BCF00E05C00 /* Base */,
 				60DF31C72271A29100E05C00 /* Swift.swift */,
@@ -318,7 +352,8 @@
 		60DF31BC22717F3100E05C00 /* Unsplash */ = {
 			isa = PBXGroup;
 			children = (
-				60DF31BD22717F5000E05C00 /* UnsplashViewController.swift */,
+				60DF31E62271C13700E05C00 /* Unsplash */,
+				60DF31E52271C0CD00E05C00 /* UnsplashList */,
 			);
 			path = Unsplash;
 			sourceTree = "<group>";
@@ -336,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				60DF31D32271AE0300E05C00 /* Root */,
+				60DF31EC2271C8F400E05C00 /* Unsplash */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -360,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				60DF31D62271AE1E00E05C00 /* StubRootTabBarRouter.swift */,
+				60DF31E12271B75200E05C00 /* RootTabBarRouterSpecs.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -388,6 +425,97 @@
 				60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31E52271C0CD00E05C00 /* UnsplashList */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31E32271C0AF00E05C00 /* UnsplashListViewController.swift */,
+			);
+			path = UnsplashList;
+			sourceTree = "<group>";
+		};
+		60DF31E62271C13700E05C00 /* Unsplash */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31E72271C14B00E05C00 /* Router */,
+				60DF31BD22717F5000E05C00 /* UnsplashViewController.swift */,
+			);
+			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		60DF31E72271C14B00E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31E82271C17100E05C00 /* UnsplashRouterType.swift */,
+				60DF31EA2271C1B300E05C00 /* UnsplashRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31EC2271C8F400E05C00 /* Unsplash */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31ED2271C8FD00E05C00 /* Unsplash */,
+			);
+			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		60DF31ED2271C8FD00E05C00 /* Unsplash */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31EE2271C90300E05C00 /* Router */,
+			);
+			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		60DF31EE2271C90300E05C00 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31EF2271C91B00E05C00 /* UnsplashRouterSpecs.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		60DF31F32271CFF300E05C00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31F42271CFFA00E05C00 /* Pure */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		60DF31F42271CFFA00E05C00 /* Pure */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31F52271D00A00E05C00 /* StubFactory.swift */,
+			);
+			path = Pure;
+			sourceTree = "<group>";
+		};
+		60DF31F72271D3E400E05C00 /* Pure */ = {
+			isa = PBXGroup;
+			children = (
+				60DF31F82271D3F500E05C00 /* Configurator.swift */,
+				60DF31F92271D3F500E05C00 /* ConfiguratorModule.swift */,
+				60DF31FB2271D3F500E05C00 /* Factory.swift */,
+				60DF31FC2271D3F500E05C00 /* FactoryModule.swift */,
+				60DF31FA2271D3F500E05C00 /* Module.swift */,
+				60DF32062271D5E300E05C00 /* Payload */,
+			);
+			path = Pure;
+			sourceTree = "<group>";
+		};
+		60DF32062271D5E300E05C00 /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+				60709C2E2271D71B00E2A9D1 /* PayloadConfigurator.swift */,
+				60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */,
+				60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */,
+				60709C282271D65100E2A9D1 /* PayloadFactoryModule.swift */,
+				60DF32042271D5A700E05C00 /* PayloadModule.swift */,
+			);
+			path = Payload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,7 +727,6 @@
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Pure/Pure.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
@@ -617,7 +744,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pure.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
@@ -639,19 +765,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DF31E42271C0AF00E05C00 /* UnsplashListViewController.swift in Sources */,
 				60DF319B22716A8700E05C00 /* AppDelegateType.swift in Sources */,
 				60DF31BB22717E3600E05C00 /* RootTabBarController.swift in Sources */,
 				60DF31BE22717F5000E05C00 /* UnsplashViewController.swift in Sources */,
+				60DF31EB2271C1B300E05C00 /* UnsplashRouter.swift in Sources */,
+				60DF31FD2271D3F500E05C00 /* Configurator.swift in Sources */,
 				60DF31992271688700E05C00 /* Application.swift in Sources */,
 				60DF31C022717F9400E05C00 /* RootTabBarRouter.swift in Sources */,
+				60DF31FF2271D3F500E05C00 /* Module.swift in Sources */,
 				60DF31B622717BEB00E05C00 /* BaseViewController.swift in Sources */,
 				60DF31CA2271A94C00E05C00 /* RootRouterType.swift in Sources */,
+				60709C2D2271D71200E2A9D1 /* PayloadConfiguratorModule.swift in Sources */,
 				60DF319F22716F4400E05C00 /* main.swift in Sources */,
 				60DF31902271680300E05C00 /* ApplicationType.swift in Sources */,
+				60DF31FE2271D3F500E05C00 /* ConfiguratorModule.swift in Sources */,
 				60DF31CE2271AA8000E05C00 /* BaseRootRouter.swift in Sources */,
 				60DF31CC2271AA6200E05C00 /* BaseRouter.swift in Sources */,
+				60709C292271D65100E2A9D1 /* PayloadFactoryModule.swift in Sources */,
+				60709C2F2271D71B00E2A9D1 /* PayloadConfigurator.swift in Sources */,
+				60DF32012271D3F500E05C00 /* FactoryModule.swift in Sources */,
 				60DF31B922717C3800E05C00 /* RootTabBarRouterType.swift in Sources */,
 				60DF31E02271B26000E05C00 /* ApplicationDelegate.swift in Sources */,
+				60DF32002271D3F500E05C00 /* Factory.swift in Sources */,
+				60709C2B2271D65900E2A9D1 /* PayloadFactory.swift in Sources */,
+				60DF32052271D5A700E05C00 /* PayloadModule.swift in Sources */,
+				60DF31E92271C17100E05C00 /* UnsplashRouterType.swift in Sources */,
 				60DF316A22715EBC00E05C00 /* AppDelegate.swift in Sources */,
 				60DF319D22716B9A00E05C00 /* ApplicationRouter.swift in Sources */,
 				60DF31962271685000E05C00 /* RouterType.swift in Sources */,
@@ -665,11 +804,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DF32032271D55F00E05C00 /* StubFactory.swift in Sources */,
 				60DF31A522716FEB00E05C00 /* StubAppDelegate.swift in Sources */,
 				60DF31D72271AE1E00E05C00 /* StubRootTabBarRouter.swift in Sources */,
 				60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */,
+				60DF31F02271C91B00E05C00 /* UnsplashRouterSpecs.swift in Sources */,
 				60DF31DE2271B24800E05C00 /* StubApplicationDelegate.swift in Sources */,
 				60DF31DC2271AF1A00E05C00 /* ApplicationSpecs.swift in Sources */,
+				60DF31E22271B75200E05C00 /* RootTabBarRouterSpecs.swift in Sources */,
 				60DF31AA227172E000E05C00 /* StubApplication.swift in Sources */,
 				60DF31AC2271777E00E05C00 /* AppDelegateSpecs.swift in Sources */,
 			);

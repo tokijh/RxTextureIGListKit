@@ -14,8 +14,8 @@ final class StubApplicationRouter: ApplicationRouterType {
 
     // MARK: - Lifecycle
 
-    required init(dependency: Dependency = .stub(), payload: Payload = ()) {
-        super.init(dependency: dependency, payload: payload)
+    required init(dependency: Dependency = .stub()) {
+        super.init(dependency: dependency)
     }
 
     // MAKR: - ApplicationRouter

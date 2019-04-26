@@ -28,7 +28,6 @@ target 'RxTextureIGListKit' do
 
   # Misc.
   pod 'Then'
-  pod 'Pure'
 
   target 'RxTextureIGListKitTests' do
     inherit! :search_paths
@@ -36,6 +35,7 @@ target 'RxTextureIGListKit' do
     pod 'Stubber'
     pod 'Quick'
     pod 'RxNimble/RxTest'
+
   end
 
 end

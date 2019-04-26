@@ -6,12 +6,11 @@
 //  Copyright © 2019 tokijh. All rights reserved.
 //
 
-import Pure
 import UIKit
 
 class RootTabBarRouterType: BaseRootRouter, FactoryModule {
 
-    required init(dependency: Dependency, payload: Payload) { }
+    required init(dependency: Dependency) { }
 
     func presentUnsplash() {
         abstractMethod()
@@ -21,5 +20,6 @@ class RootTabBarRouterType: BaseRootRouter, FactoryModule {
 extension RootTabBarRouterType {
     struct Dependency {
         let tabBarController: UITabBarController
+        let unsplashViewController: UIViewController
     }
 }
