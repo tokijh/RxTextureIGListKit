@@ -16,6 +16,12 @@
 		60709C3322729E9200E2A9D1 /* PureSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C3222729E9200E2A9D1 /* PureSpecs.swift */; };
 		60709C3522729EF100E2A9D1 /* PureTestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C3422729EF100E2A9D1 /* PureTestSupport.swift */; };
 		60709C382272A17F00E2A9D1 /* PayloadPureSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C372272A17F00E2A9D1 /* PayloadPureSpecs.swift */; };
+		60709C3A2272A28400E2A9D1 /* ApplicationRouterTypeSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C392272A28400E2A9D1 /* ApplicationRouterTypeSpecs.swift */; };
+		60709C3C2272A3A700E2A9D1 /* RootTabBarRouterTypeSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C3B2272A3A700E2A9D1 /* RootTabBarRouterTypeSpecs.swift */; };
+		60709C3E2272A41800E2A9D1 /* UnsplashRouterTypeSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C3D2272A41800E2A9D1 /* UnsplashRouterTypeSpecs.swift */; };
+		60709C402272A6C400E2A9D1 /* BaseNavigationControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C3F2272A6C400E2A9D1 /* BaseNavigationControllerSpecs.swift */; };
+		60709C422272A7ED00E2A9D1 /* StubBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C412272A7ED00E2A9D1 /* StubBaseNavigationController.swift */; };
+		60709C442272A89200E2A9D1 /* SwiftSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C432272A89200E2A9D1 /* SwiftSpecs.swift */; };
 		60DF316A22715EBC00E05C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF316922715EBC00E05C00 /* AppDelegate.swift */; };
 		60DF317122715EBE00E05C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317022715EBE00E05C00 /* Assets.xcassets */; };
 		60DF317422715EBE00E05C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DF317222715EBE00E05C00 /* LaunchScreen.storyboard */; };
@@ -80,6 +86,12 @@
 		60709C3222729E9200E2A9D1 /* PureSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureSpecs.swift; sourceTree = "<group>"; };
 		60709C3422729EF100E2A9D1 /* PureTestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureTestSupport.swift; sourceTree = "<group>"; };
 		60709C372272A17F00E2A9D1 /* PayloadPureSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadPureSpecs.swift; sourceTree = "<group>"; };
+		60709C392272A28400E2A9D1 /* ApplicationRouterTypeSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouterTypeSpecs.swift; sourceTree = "<group>"; };
+		60709C3B2272A3A700E2A9D1 /* RootTabBarRouterTypeSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarRouterTypeSpecs.swift; sourceTree = "<group>"; };
+		60709C3D2272A41800E2A9D1 /* UnsplashRouterTypeSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashRouterTypeSpecs.swift; sourceTree = "<group>"; };
+		60709C3F2272A6C400E2A9D1 /* BaseNavigationControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationControllerSpecs.swift; sourceTree = "<group>"; };
+		60709C412272A7ED00E2A9D1 /* StubBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubBaseNavigationController.swift; sourceTree = "<group>"; };
+		60709C432272A89200E2A9D1 /* SwiftSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSpecs.swift; sourceTree = "<group>"; };
 		60DF316622715EBC00E05C00 /* RxTextureIGListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTextureIGListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DF316922715EBC00E05C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DF317022715EBE00E05C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +190,23 @@
 				60709C372272A17F00E2A9D1 /* PayloadPureSpecs.swift */,
 			);
 			path = Payload;
+			sourceTree = "<group>";
+		};
+		60709C452272A89A00E2A9D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				60709C462272A8A200E2A9D1 /* UIKit */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		60709C462272A8A200E2A9D1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				60709C412272A7ED00E2A9D1 /* StubBaseNavigationController.swift */,
+				60709C3F2272A6C400E2A9D1 /* BaseNavigationControllerSpecs.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		60DF315D22715EBC00E05C00 = {
@@ -412,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				60DF31D62271AE1E00E05C00 /* StubRootTabBarRouter.swift */,
+				60709C3B2272A3A700E2A9D1 /* RootTabBarRouterTypeSpecs.swift */,
 				60DF31E12271B75200E05C00 /* RootTabBarRouterSpecs.swift */,
 			);
 			path = Router;
@@ -439,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				60DF31A72271714E00E05C00 /* StubApplicationRouter.swift */,
+				60709C392272A28400E2A9D1 /* ApplicationRouterTypeSpecs.swift */,
 				60709C30227296BB00E2A9D1 /* ApplicationRouterSpecs.swift */,
 			);
 			path = Router;
@@ -489,6 +520,7 @@
 		60DF31EE2271C90300E05C00 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				60709C3D2272A41800E2A9D1 /* UnsplashRouterTypeSpecs.swift */,
 				60DF31EF2271C91B00E05C00 /* UnsplashRouterSpecs.swift */,
 			);
 			path = Router;
@@ -498,6 +530,8 @@
 			isa = PBXGroup;
 			children = (
 				60DF31F42271CFFA00E05C00 /* Pure */,
+				60709C452272A89A00E2A9D1 /* Base */,
+				60709C432272A89200E2A9D1 /* SwiftSpecs.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -824,18 +858,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60709C3E2272A41800E2A9D1 /* UnsplashRouterTypeSpecs.swift in Sources */,
 				60DF32032271D55F00E05C00 /* StubFactory.swift in Sources */,
 				60709C3522729EF100E2A9D1 /* PureTestSupport.swift in Sources */,
 				60DF31A522716FEB00E05C00 /* StubAppDelegate.swift in Sources */,
+				60709C422272A7ED00E2A9D1 /* StubBaseNavigationController.swift in Sources */,
 				60DF31D72271AE1E00E05C00 /* StubRootTabBarRouter.swift in Sources */,
 				60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */,
 				60709C382272A17F00E2A9D1 /* PayloadPureSpecs.swift in Sources */,
 				60DF31F02271C91B00E05C00 /* UnsplashRouterSpecs.swift in Sources */,
 				60DF31DE2271B24800E05C00 /* StubApplicationDelegate.swift in Sources */,
+				60709C402272A6C400E2A9D1 /* BaseNavigationControllerSpecs.swift in Sources */,
 				60709C31227296BB00E2A9D1 /* ApplicationRouterSpecs.swift in Sources */,
 				60709C3322729E9200E2A9D1 /* PureSpecs.swift in Sources */,
 				60DF31DC2271AF1A00E05C00 /* ApplicationSpecs.swift in Sources */,
+				60709C442272A89200E2A9D1 /* SwiftSpecs.swift in Sources */,
+				60709C3C2272A3A700E2A9D1 /* RootTabBarRouterTypeSpecs.swift in Sources */,
 				60DF31E22271B75200E05C00 /* RootTabBarRouterSpecs.swift in Sources */,
+				60709C3A2272A28400E2A9D1 /* ApplicationRouterTypeSpecs.swift in Sources */,
 				60DF31AA227172E000E05C00 /* StubApplication.swift in Sources */,
 				60DF31AC2271777E00E05C00 /* AppDelegateSpecs.swift in Sources */,
 			);

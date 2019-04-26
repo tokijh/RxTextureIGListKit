@@ -71,5 +71,27 @@ final class RootTabBarRouterSpecs: QuickSpec {
                 expect(tabBarController.selectedViewController).to(equal(unsplashViewController))
             }
         }
+
+        describe("Dependency") {
+            var dependency: RootTabBarRouter.Dependency!
+
+            describe("when init") {
+                let when = {
+                    dependency = .init()
+                }
+
+                it("tabBarController is RootTabBarController") {
+                    when()
+
+                    expect(dependency.tabBarController is RootTabBarController).to(beTrue())
+                }
+
+                it("unsplashViewController is UnsplashViewController") {
+                    when()
+
+                    expect(dependency.unsplashViewController is UnsplashViewController).to(beTrue())
+                }
+            }
+        }
     }
 }

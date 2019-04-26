@@ -46,5 +46,21 @@ final class ApplicationRouterSpecs: QuickSpec {
                 expect(Stubber.executions(rootTabBarRouter.presentUnsplash).count).to(equal(1))
             }
         }
+
+        describe("Dependency") {
+            var dependency: ApplicationRouter.Dependency!
+
+            describe("when init") {
+                let when = {
+                    dependency = .init()
+                }
+
+                it("rootTabBarRouter is RootTabBarRouter") {
+                    when()
+
+                    expect(dependency.rootTabBarRouter is RootTabBarRouter).to(beTrue())
+                }
+            }
+        }
     }
 }

@@ -49,5 +49,33 @@ final class UnsplashRouterSpecs: QuickSpec {
                 expect(navigationController.topViewController).to(equal(unsplashListVC))
             }
         }
+
+        describe("Dependency") {
+            var dependency: UnsplashRouter.Dependency!
+
+            describe("when init") {
+                var navigationController: UINavigationController!
+
+                let when = {
+                    dependency = .init(navigationController: navigationController)
+                }
+
+                beforeEach {
+                    navigationController = .init()
+                }
+
+                it("navigationController is inputted navigationController") {
+                    when()
+
+                    expect(dependency.navigationController).to(equal(navigationController))
+                }
+
+                it("unsplashListVCFactory is not StubFactory") {
+                    when()
+
+                    expect(dependency.unsplashListVCFactory is StubFactory).to(beFalse())
+                }
+            }
+        }
     }
 }
