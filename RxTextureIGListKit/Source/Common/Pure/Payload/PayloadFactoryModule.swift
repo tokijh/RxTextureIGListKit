@@ -10,7 +10,7 @@
 public protocol PayloadFactoryModule: PayloadModule {
 
     /// A factory for `Self`.
-    associatedtype PayloadFactory = RxTextureIGListKit.PayloadFactory<Self>
+    associatedtype Factory = RxTextureIGListKit.PayloadFactory<Self>
 
     /// Creates an instance of a module with a dependency and a payload.
     init(dependency: Dependency, payload: Payload)

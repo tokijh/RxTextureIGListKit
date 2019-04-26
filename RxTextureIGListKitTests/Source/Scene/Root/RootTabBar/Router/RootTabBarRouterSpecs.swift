@@ -50,6 +50,7 @@ final class RootTabBarRouterSpecs: QuickSpec {
 
                 expect(router.rootViewController).to(equal(tabBarController))
             }
+
             it("tabBarController.viewControllers to equal expected") {
                 let expected = [unsplashViewController]
 

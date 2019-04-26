@@ -10,7 +10,7 @@
 public protocol PayloadConfiguratorModule: class, PayloadModule {
 
     /// A configurator for `Self`.
-    associatedtype PayloadConfigurator = RxTextureIGListKit.PayloadConfigurator<Self>
+    associatedtype Configurator = RxTextureIGListKit.PayloadConfigurator<Self>
 
     /// Configures an existing module with a dependency and a payload.
     func configure(dependency: Dependency, payload: Payload)

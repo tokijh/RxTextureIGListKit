@@ -60,6 +60,7 @@ final class ApplicationSpecs: QuickSpec {
 
                     expect(application.window).toNot(beNil())
                 }
+
                 it("window.rootViewController to equal router.rootViewController") {
                     let rootViewController = UIViewController()
                     Stubber.register(router.getRootViewController) { rootViewController }
@@ -68,6 +69,7 @@ final class ApplicationSpecs: QuickSpec {
 
                     expect(application.window?.rootViewController).to(equal(router.rootViewController))
                 }
+
                 it("router.presentRoot should be call one time") {
                     Stubber.register(router.presentRoot) { }
 

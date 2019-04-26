@@ -38,6 +38,7 @@ final class AppDelegateSpecs: QuickSpec {
 
                 expect(appDelegate.application is Application).to(beTrue())
             }
+
             it("application.delegate to equal appDelegate") {
                 when()
 
