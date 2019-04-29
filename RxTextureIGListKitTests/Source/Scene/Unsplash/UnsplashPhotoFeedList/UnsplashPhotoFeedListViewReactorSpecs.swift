@@ -14,7 +14,7 @@ import Stubber
 
 import RxSwift
 
-final class c: QuickSpec {
+final class UnsplashPhotoFeedListViewReactorSpecs: QuickSpec {
 
     // MARK: - Typealias
 
