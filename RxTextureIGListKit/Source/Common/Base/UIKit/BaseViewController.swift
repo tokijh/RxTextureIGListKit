@@ -8,4 +8,6 @@
 
 import UIKit
 
+import RxViewController
+
 class BaseViewController: UIViewController { }

@@ -25,7 +25,7 @@ final class UnsplashRouterSpecs: QuickSpec {
 
             beforeEach {
                 navigationController = .init()
-                unsplashPhotoFeedListVCFactory = .stub(UnsplashPhotoFeedListViewController())
+                unsplashPhotoFeedListVCFactory = .stub(UnsplashPhotoFeedListViewController(dependency: .stub()))
             }
 
             let when = {
@@ -38,7 +38,7 @@ final class UnsplashRouterSpecs: QuickSpec {
             }
 
             it("navigationController.topViewController to equal unsplashPhotoFeedListVC") {
-                let unsplashPhotoFeedListVC = UnsplashPhotoFeedListViewController()
+                let unsplashPhotoFeedListVC = UnsplashPhotoFeedListViewController.stub()
                 unsplashPhotoFeedListVCFactory.register(unsplashPhotoFeedListVC)
 
                 when()

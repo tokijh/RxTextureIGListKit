@@ -14,8 +14,8 @@ final class UnsplashService: UnsplashServiceType {
     let host = "https://api.unsplash.com/"
     let clientID = "3b99a69cee09770a4a0bbb870b437dbda53efb22f6f6de63714b71c4df7c9642"
 
-    func fetchPopularPhotos(page: Int, perPage: Int, imageSize: Int) -> Single<[UnsplashPhotoFeed]> {
-        guard let request = generateURL(endpoint: .popular(page: page, perPage: perPage, imageSize: imageSize))
+    func fetchPopularPhotos(page: Int, perPage: Int) -> Single<[UnsplashPhotoFeed]> {
+        guard let request = generateURL(endpoint: .popular(page: page, perPage: perPage))
             else { return .error(NetworkError.undefined) }
         return response(request: request).map([UnsplashPhotoFeed].self).asSingle()
     }
@@ -59,16 +59,15 @@ extension UnsplashService {
 
 extension UnsplashService {
     enum Endpoint {
-        case popular(page: Int, perPage: Int, imageSize: Int)
+        case popular(page: Int, perPage: Int)
 
         var parameters: [String: Any]? {
             switch self {
-            case let .popular(page, perPage, imageSize):
+            case let .popular(page, perPage):
                 return [
                     "order_by": "popular",
                     "page": page,
-                    "per_page": perPage,
-                    "image_size": imageSize
+                    "per_page": perPage
                 ]
             }
         }

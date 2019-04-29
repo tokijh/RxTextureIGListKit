@@ -18,10 +18,12 @@ final class UnsplashPhotoFeedListViewController: ASViewController<ASCollectionNo
     // MARK: - Typeaslias
 
     typealias Reactor = UnsplashPhotoFeedListViewReactor
+    typealias DataSource = BaseRxListAdapterDataSource<UnsplashPhotoFeedListItem>
 
     // MARK: - Property
 
     var disposeBag = DisposeBag()
+    private let dataSource: DataSource
 
     private lazy var listAdapter = ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
 
@@ -29,42 +31,58 @@ final class UnsplashPhotoFeedListViewController: ASViewController<ASCollectionNo
 
     convenience init(dependency: Dependency) {
         let node = ASCollectionNode(collectionViewLayout: UICollectionViewFlowLayout())
-        self.init(node: node)
-        self.reactor = dependency.reactor
+        self.init(node: node, dependency: dependency)
     }
 
-    override init(node: ASCollectionNode) {
+    init(node: ASCollectionNode, dependency: Dependency) {
+        defer { self.reactor = dependency.reactor }
+        self.dataSource = .init(
+            unsplashPhotoFeedSectionControllerFactory: dependency.unsplashPhotoFeedSectionControllerFactory
+        )
         super.init(node: node)
-        node.backgroundColor = .white
-        node.automaticallyManagesSubnodes = true
-        node.automaticallyRelayoutOnSafeAreaChanges = true
-
-        listAdapter.dataSource = self
-        listAdapter.setASDKCollectionNode(node)
+        setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+    private func setup() {
+        node.backgroundColor = .white
+        node.automaticallyManagesSubnodes = true
+        node.automaticallyRelayoutOnSafeAreaChanges = true
+
+        listAdapter.setASDKCollectionNode(node)
+    }
+
     // MARK: - Reactor
 
     func bind(reactor: Reactor) {
+        // State
+        reactor.state.map({ $0.sectionItems })
+            .bind(to: listAdapter.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
 
+        // Action
+        rx.viewDidLoad.map({ Reactor.Action.initialize })
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 }
 
-extension UnsplashPhotoFeedListViewController: ListAdapterDataSource {
-    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return UnsplashPhotoFeedSectionController()
-    }
+// MARK: - DataSource
 
-    func emptyView(for listAdapter: ListAdapter) -> UIView? {
-        return nil
-    }
-
-    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return (0..<10).map({ "\($0)" as ListDiffable })
+extension UnsplashPhotoFeedListViewController.DataSource {
+    convenience init(
+        unsplashPhotoFeedSectionControllerFactory: RxTextureIGListKit.Factory<UnsplashPhotoFeedSectionController>
+        ) {
+        self.init(configureSectionController: ({ (dataSource, listAdapter, item) -> ListSectionController in
+                switch item {
+                case .photoFeed:
+                    return unsplashPhotoFeedSectionControllerFactory.create()
+                }
+            })
+        )
     }
 }
 
@@ -73,5 +91,7 @@ extension UnsplashPhotoFeedListViewController: ListAdapterDataSource {
 extension UnsplashPhotoFeedListViewController {
     struct Dependency {
         let reactor: Reactor
+        let unsplashPhotoFeedSectionControllerFactory: RxTextureIGListKit
+            .Factory<UnsplashPhotoFeedSectionController> = .init()
     }
 }

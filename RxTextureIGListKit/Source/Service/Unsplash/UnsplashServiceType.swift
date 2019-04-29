@@ -9,5 +9,5 @@
 import RxSwift
 
 protocol UnsplashServiceType: Service {
-    func fetchPopularPhotos(page: Int, perPage: Int, imageSize: Int) -> Single<[UnsplashPhotoFeed]>
+    func fetchPopularPhotos(page: Int, perPage: Int) -> Single<[UnsplashPhotoFeed]>
 }

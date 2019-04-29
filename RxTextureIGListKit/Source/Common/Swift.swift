@@ -25,3 +25,8 @@ func abstractMethod(
     ) -> Swift.Never {
     fatalErrorInDebug(message: "'\(function)' is abstract method", file: file, line: line)
 }
+
+func bindingError(_ error: Error) {
+    let error = "Binding error: \(error)"
+    fatalErrorInDebug(message: error)
+}

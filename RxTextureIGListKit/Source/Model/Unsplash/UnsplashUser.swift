@@ -8,12 +8,12 @@
 
 struct UnsplashUser: Codable {
     let id: String
-    let username: String
+    let userName: String
     let profileImage: UnsplashUserProfileImage
 
     private enum CodingKeys: String, CodingKey {
         case id
-        case username
+        case userName = "username"
         case profileImage = "profile_image"
     }
 }

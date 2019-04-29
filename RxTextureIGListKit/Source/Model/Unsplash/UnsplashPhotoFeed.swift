@@ -8,11 +8,11 @@
 
 struct UnsplashPhotoFeed: Codable {
     let id: String
-    let urls: UnsplashPhotoURL
-    let description: String
-    let uploadedDateString: String
+    let urls: UnsplashPhotoURL?
+    let description: String?
+    let uploadedDateString: String?
     let likesCount: Int
-    let user: UnsplashUser
+    let user: UnsplashUser?
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -21,5 +21,18 @@ struct UnsplashPhotoFeed: Codable {
         case uploadedDateString = "created_at"
         case likesCount = "likes"
         case user = "user"
+    }
+}
+
+extension UnsplashPhotoFeed {
+    static func empty() -> UnsplashPhotoFeed {
+        return UnsplashPhotoFeed(
+            id: "",
+            urls: nil,
+            description: nil,
+            uploadedDateString: nil,
+            likesCount: 0,
+            user: nil
+        )
     }
 }
