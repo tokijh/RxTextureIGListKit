@@ -11,6 +11,14 @@
 		601DA6CB2276C47200F5BF62 /* StubUnsplashPhotoFeedListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6CA2276C47200F5BF62 /* StubUnsplashPhotoFeedListViewReactor.swift */; };
 		601DA6CF2276C50100F5BF62 /* StubUnsplashServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6CE2276C50100F5BF62 /* StubUnsplashServiceType.swift */; };
 		601DA6D12276C59D00F5BF62 /* StubUnsplashPhotoFeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6D02276C59D00F5BF62 /* StubUnsplashPhotoFeedListViewController.swift */; };
+		601DA6D42276C71D00F5BF62 /* UnsplashPhotoFeedListViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6D32276C71D00F5BF62 /* UnsplashPhotoFeedListViewControllerSpecs.swift */; };
+		601DA6D62276CCB500F5BF62 /* UnsplashPhotoFeedListViewReactorSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6D52276CCB500F5BF62 /* UnsplashPhotoFeedListViewReactorSpecs.swift */; };
+		601DA6DA2276CDDC00F5BF62 /* StubUnsplashPhotoFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6D92276CDDC00F5BF62 /* StubUnsplashPhotoFeed.swift */; };
+		601DA6DC2276CE5100F5BF62 /* StubUnsplashPhotoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6DB2276CE5100F5BF62 /* StubUnsplashPhotoURL.swift */; };
+		601DA6DE2276CE9100F5BF62 /* StubUnsplashUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6DD2276CE9100F5BF62 /* StubUnsplashUser.swift */; };
+		601DA6E02276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6DF2276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift */; };
+		601DA6E32276D38100F5BF62 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6E22276D38100F5BF62 /* Matcher.swift */; };
+		601DA6E62276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6E52276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift */; };
 		60709C292271D65100E2A9D1 /* PayloadFactoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C282271D65100E2A9D1 /* PayloadFactoryModule.swift */; };
 		60709C2B2271D65900E2A9D1 /* PayloadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */; };
 		60709C2D2271D71200E2A9D1 /* PayloadConfiguratorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */; };
@@ -104,6 +112,14 @@
 		601DA6CA2276C47200F5BF62 /* StubUnsplashPhotoFeedListViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashPhotoFeedListViewReactor.swift; sourceTree = "<group>"; };
 		601DA6CE2276C50100F5BF62 /* StubUnsplashServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashServiceType.swift; sourceTree = "<group>"; };
 		601DA6D02276C59D00F5BF62 /* StubUnsplashPhotoFeedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashPhotoFeedListViewController.swift; sourceTree = "<group>"; };
+		601DA6D32276C71D00F5BF62 /* UnsplashPhotoFeedListViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoFeedListViewControllerSpecs.swift; sourceTree = "<group>"; };
+		601DA6D52276CCB500F5BF62 /* UnsplashPhotoFeedListViewReactorSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoFeedListViewReactorSpecs.swift; sourceTree = "<group>"; };
+		601DA6D92276CDDC00F5BF62 /* StubUnsplashPhotoFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashPhotoFeed.swift; sourceTree = "<group>"; };
+		601DA6DB2276CE5100F5BF62 /* StubUnsplashPhotoURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashPhotoURL.swift; sourceTree = "<group>"; };
+		601DA6DD2276CE9100F5BF62 /* StubUnsplashUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashUser.swift; sourceTree = "<group>"; };
+		601DA6DF2276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashUserProfileImage.swift; sourceTree = "<group>"; };
+		601DA6E22276D38100F5BF62 /* Matcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
+		601DA6E52276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoFeedSectionControllerSpecs.swift; sourceTree = "<group>"; };
 		60709C282271D65100E2A9D1 /* PayloadFactoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadFactoryModule.swift; sourceTree = "<group>"; };
 		60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadFactory.swift; sourceTree = "<group>"; };
 		60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadConfiguratorModule.swift; sourceTree = "<group>"; };
@@ -233,8 +249,11 @@
 		601DA6C92276C45A00F5BF62 /* UnsplashPhotoFeedList */ = {
 			isa = PBXGroup;
 			children = (
+				601DA6E42276DB3D00F5BF62 /* SectionController */,
 				601DA6CA2276C47200F5BF62 /* StubUnsplashPhotoFeedListViewReactor.swift */,
 				601DA6D02276C59D00F5BF62 /* StubUnsplashPhotoFeedListViewController.swift */,
+				601DA6D32276C71D00F5BF62 /* UnsplashPhotoFeedListViewControllerSpecs.swift */,
+				601DA6D52276CCB500F5BF62 /* UnsplashPhotoFeedListViewReactorSpecs.swift */,
 			);
 			path = UnsplashPhotoFeedList;
 			sourceTree = "<group>";
@@ -253,6 +272,41 @@
 				601DA6CE2276C50100F5BF62 /* StubUnsplashServiceType.swift */,
 			);
 			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		601DA6D72276CDBC00F5BF62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				601DA6D82276CDCD00F5BF62 /* Unsplash */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		601DA6D82276CDCD00F5BF62 /* Unsplash */ = {
+			isa = PBXGroup;
+			children = (
+				601DA6D92276CDDC00F5BF62 /* StubUnsplashPhotoFeed.swift */,
+				601DA6DB2276CE5100F5BF62 /* StubUnsplashPhotoURL.swift */,
+				601DA6DD2276CE9100F5BF62 /* StubUnsplashUser.swift */,
+				601DA6DF2276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift */,
+			);
+			path = Unsplash;
+			sourceTree = "<group>";
+		};
+		601DA6E12276D37600F5BF62 /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+				601DA6E22276D38100F5BF62 /* Matcher.swift */,
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+		601DA6E42276DB3D00F5BF62 /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				601DA6E52276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift */,
+			);
+			path = SectionController;
 			sourceTree = "<group>";
 		};
 		60709C362272A13E00E2A9D1 /* Payload */ = {
@@ -482,6 +536,7 @@
 			children = (
 				60DF31A222716FAF00E05C00 /* AppDelegate */,
 				60DF31A62271714500E05C00 /* Application */,
+				601DA6D72276CDBC00F5BF62 /* Model */,
 				601DA6CC2276C4EB00F5BF62 /* Service */,
 				60DF31D22271ADF900E05C00 /* Scene */,
 			);
@@ -647,9 +702,9 @@
 			children = (
 				60709C6B227312DE00E2A9D1 /* Node */,
 				60709C642272F24B00E2A9D1 /* SectionController */,
+				60709C9E22769D1300E2A9D1 /* UnsplashPhotoFeedListItem.swift */,
 				60DF31E32271C0AF00E05C00 /* UnsplashPhotoFeedListViewController.swift */,
 				60709C5C2272CDCE00E2A9D1 /* UnsplashPhotoFeedListViewReactor.swift */,
-				60709C9E22769D1300E2A9D1 /* UnsplashPhotoFeedListItem.swift */,
 			);
 			path = UnsplashPhotoFeedList;
 			sourceTree = "<group>";
@@ -704,6 +759,7 @@
 			children = (
 				60DF31F42271CFFA00E05C00 /* Pure */,
 				60709C452272A89A00E2A9D1 /* Base */,
+				601DA6E12276D37600F5BF62 /* Nimble */,
 				60709C432272A89200E2A9D1 /* SwiftSpecs.swift */,
 			);
 			path = Common;
@@ -1051,24 +1107,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				60709C3E2272A41800E2A9D1 /* UnsplashRouterTypeSpecs.swift in Sources */,
+				601DA6D62276CCB500F5BF62 /* UnsplashPhotoFeedListViewReactorSpecs.swift in Sources */,
 				60DF32032271D55F00E05C00 /* StubFactory.swift in Sources */,
+				601DA6DE2276CE9100F5BF62 /* StubUnsplashUser.swift in Sources */,
 				60709C3522729EF100E2A9D1 /* PureTestSupport.swift in Sources */,
 				60DF31A522716FEB00E05C00 /* StubAppDelegate.swift in Sources */,
+				601DA6E02276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift in Sources */,
 				60709C422272A7ED00E2A9D1 /* StubBaseNavigationController.swift in Sources */,
 				60DF31D72271AE1E00E05C00 /* StubRootTabBarRouter.swift in Sources */,
 				60DF31A82271714E00E05C00 /* StubApplicationRouter.swift in Sources */,
 				60709C382272A17F00E2A9D1 /* PayloadPureSpecs.swift in Sources */,
+				601DA6E62276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift in Sources */,
 				601DA6CB2276C47200F5BF62 /* StubUnsplashPhotoFeedListViewReactor.swift in Sources */,
+				601DA6DC2276CE5100F5BF62 /* StubUnsplashPhotoURL.swift in Sources */,
 				601DA6CF2276C50100F5BF62 /* StubUnsplashServiceType.swift in Sources */,
 				60DF31F02271C91B00E05C00 /* UnsplashRouterSpecs.swift in Sources */,
 				60DF31DE2271B24800E05C00 /* StubApplicationDelegate.swift in Sources */,
+				601DA6E32276D38100F5BF62 /* Matcher.swift in Sources */,
 				60709C402272A6C400E2A9D1 /* BaseNavigationControllerSpecs.swift in Sources */,
 				601DA6D12276C59D00F5BF62 /* StubUnsplashPhotoFeedListViewController.swift in Sources */,
+				601DA6D42276C71D00F5BF62 /* UnsplashPhotoFeedListViewControllerSpecs.swift in Sources */,
 				60709C31227296BB00E2A9D1 /* ApplicationRouterSpecs.swift in Sources */,
 				60709C3322729E9200E2A9D1 /* PureSpecs.swift in Sources */,
 				60DF31DC2271AF1A00E05C00 /* ApplicationSpecs.swift in Sources */,
 				60709C442272A89200E2A9D1 /* SwiftSpecs.swift in Sources */,
 				60709C3C2272A3A700E2A9D1 /* RootTabBarRouterTypeSpecs.swift in Sources */,
+				601DA6DA2276CDDC00F5BF62 /* StubUnsplashPhotoFeed.swift in Sources */,
 				60DF31E22271B75200E05C00 /* RootTabBarRouterSpecs.swift in Sources */,
 				60709C3A2272A28400E2A9D1 /* ApplicationRouterTypeSpecs.swift in Sources */,
 				60709C6A2272F63B00E2A9D1 /* StubUnsplashRouter.swift in Sources */,

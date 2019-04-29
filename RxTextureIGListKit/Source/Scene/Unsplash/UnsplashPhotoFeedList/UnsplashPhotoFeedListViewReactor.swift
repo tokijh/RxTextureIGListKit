@@ -37,9 +37,13 @@ final class UnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
 
     // MARK: - Lifecycle
 
-    init(dependency: Dependency) {
+    convenience init(dependency: Dependency) {
+        self.init(dependency: dependency, initialState: State())
+    }
+
+    init(dependency: Dependency, initialState: State) {
         self.service = dependency.service
-        self.initialState = State()
+        self.initialState = initialState
     }
 
     func mutate(action: Action) -> Observable<Mutation> {

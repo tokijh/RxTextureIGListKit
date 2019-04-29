@@ -56,7 +56,6 @@ final class UnsplashPhotoFeedSectionController: ListBindingSectionController<Lis
 
     func transform(action: Observable<Action>) -> Observable<Action> {
         self.rx.methodInvoked(#selector(didUpdate(to:)))
-            .debug()
             .subscribe()
             .disposed(by: disposeBag)
         let didUpdatePhotoFeed: Observable<Action> = rx.didUpdateWithDiffable(UnsplashPhotoFeedListItem.self)
