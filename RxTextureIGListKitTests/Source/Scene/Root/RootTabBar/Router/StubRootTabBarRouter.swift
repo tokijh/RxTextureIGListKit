@@ -14,8 +14,8 @@ final class StubRootTabBarRouter: RootTabBarRouterType {
 
     override var rootViewController: UIViewController { return getRootViewController() }
 
-    override func presentUnsplash() {
-        Stubber.invoke(self.presentUnsplash, args: (), default: ())
+    override func presentIGListKitUnsplash() {
+        Stubber.invoke(self.presentIGListKitUnsplash, args: (), default: ())
     }
 }
 
@@ -36,8 +36,8 @@ extension RootTabBarRouterType {
 extension RootTabBarRouterType.Dependency {
     static func stub(
         tabBarController: UITabBarController = UITabBarController(),
-        unsplashRouter: UnsplashRouterType = .stub()
+        igListKitUnsplashRouter: IGListKitUnsplashRouterType = .stub()
         ) -> RootTabBarRouterType.Dependency {
-        return .init(tabBarController: tabBarController, unsplashRouter: unsplashRouter)
+        return .init(tabBarController: tabBarController, igListKitUnsplashRouter: igListKitUnsplashRouter)
     }
 }

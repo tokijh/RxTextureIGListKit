@@ -13,11 +13,11 @@ import RxSwift
 
 import IGListKit
 
-final class UnsplashPhotoFeedListViewController: ASViewController<ASCollectionNode>, View, FactoryModule {
+final class IGListKitUnsplashPhotoFeedListViewController: ASViewController<ASCollectionNode>, View, FactoryModule {
 
     // MARK: - Typeaslias
 
-    typealias Reactor = UnsplashPhotoFeedListViewReactor
+    typealias Reactor = IGListKitUnsplashPhotoFeedListViewReactor
     typealias DataSource = BaseRxListAdapterDataSource<UnsplashPhotoFeedListItem>
 
     // MARK: - Property
@@ -37,7 +37,8 @@ final class UnsplashPhotoFeedListViewController: ASViewController<ASCollectionNo
     init(node: ASCollectionNode, dependency: Dependency) {
         defer { self.reactor = dependency.reactor }
         self.dataSource = .init(
-            unsplashPhotoFeedSectionControllerFactory: dependency.unsplashPhotoFeedSectionControllerFactory
+            igListKitUnsplashPhotoFeedSectionControllerFactory: dependency
+                .igListKitUnsplashPhotoFeedSectionControllerFactory
         )
         super.init(node: node)
         setup()
@@ -72,14 +73,15 @@ final class UnsplashPhotoFeedListViewController: ASViewController<ASCollectionNo
 
 // MARK: - DataSource
 
-extension UnsplashPhotoFeedListViewController.DataSource {
+extension IGListKitUnsplashPhotoFeedListViewController.DataSource {
     convenience init(
-        unsplashPhotoFeedSectionControllerFactory: RxTextureIGListKit.Factory<UnsplashPhotoFeedSectionController>
+        igListKitUnsplashPhotoFeedSectionControllerFactory: RxTextureIGListKit
+        .Factory<IGListKitUnsplashPhotoFeedSectionController>
         ) {
         self.init(configureSectionController: ({ (dataSource, listAdapter, item) -> ListSectionController in
                 switch item {
                 case .photoFeed:
-                    return unsplashPhotoFeedSectionControllerFactory.create()
+                    return igListKitUnsplashPhotoFeedSectionControllerFactory.create()
                 }
             })
         )
@@ -88,10 +90,10 @@ extension UnsplashPhotoFeedListViewController.DataSource {
 
 // MARK: - Dependency
 
-extension UnsplashPhotoFeedListViewController {
+extension IGListKitUnsplashPhotoFeedListViewController {
     struct Dependency {
         let reactor: Reactor
-        let unsplashPhotoFeedSectionControllerFactory: RxTextureIGListKit
-            .Factory<UnsplashPhotoFeedSectionController> = .init()
+        let igListKitUnsplashPhotoFeedSectionControllerFactory: RxTextureIGListKit
+            .Factory<IGListKitUnsplashPhotoFeedSectionController> = .init()
     }
 }

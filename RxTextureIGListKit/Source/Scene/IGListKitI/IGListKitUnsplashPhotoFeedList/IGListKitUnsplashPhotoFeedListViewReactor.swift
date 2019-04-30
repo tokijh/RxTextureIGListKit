@@ -1,5 +1,5 @@
 //
-//  UnsplashPhotoFeedListViewReactor.swift
+//  IGKistKitUnsplashPhotoFeedListViewReactor.swift
 //  RxTextureIGListKit
 //
 //  Created by 윤중현 on 26/04/2019.
@@ -11,7 +11,7 @@ import RxSwift
 
 import IGListKit
 
-final class UnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
+final class IGListKitUnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
 
     // MARK: - Typealias
 
@@ -103,7 +103,7 @@ final class UnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
 
 // MARK: - Dependency
 
-extension UnsplashPhotoFeedListViewReactor {
+extension IGListKitUnsplashPhotoFeedListViewReactor {
     struct Dependency {
         let service: UnsplashServiceType
     }

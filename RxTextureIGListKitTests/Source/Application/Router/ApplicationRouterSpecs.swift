@@ -40,10 +40,10 @@ final class ApplicationRouterSpecs: QuickSpec {
                 router.presentRoot()
             }
 
-            it("rootTabBarRouter.presentUnsplash should be call one time") {
+            it("rootTabBarRouter.presentIGListKitUnsplash should be call one time") {
                 when()
 
-                expect(Stubber.executions(rootTabBarRouter.presentUnsplash).count).to(equal(1))
+                expect(Stubber.executions(rootTabBarRouter.presentIGListKitUnsplash).count).to(equal(1))
             }
         }
 

@@ -1,5 +1,5 @@
 //
-//  UnsplashRouterType.swift
+//  IGListKitUnsplashRouterType.swift
 //  RxTextureIGListKit
 //
 //  Created by 윤중현 on 25/04/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UnsplashRouterType: BaseRootRouter, FactoryModule {
+class IGListKitUnsplashRouterType: BaseRootRouter, FactoryModule {
 
     required init(dependency: Dependency) { }
 
@@ -17,9 +17,10 @@ class UnsplashRouterType: BaseRootRouter, FactoryModule {
     }
 }
 
-extension UnsplashRouterType {
+extension IGListKitUnsplashRouterType {
     struct Dependency {
         let navigationController: UINavigationController
-        let unsplashPhotoFeedListVCFactory: RxTextureIGListKit.Factory<UnsplashPhotoFeedListViewController>
+        let igListKitUnsplashPhotoFeedListVCFactory: RxTextureIGListKit
+        .Factory<IGListKitUnsplashPhotoFeedListViewController>
     }
 }

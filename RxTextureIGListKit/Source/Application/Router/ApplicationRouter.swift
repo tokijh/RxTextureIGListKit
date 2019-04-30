@@ -26,7 +26,7 @@ final class ApplicationRouter: ApplicationRouterType {
     override var rootViewController: UIViewController { return rootTabBarRouter.rootViewController }
 
     override func presentRoot() {
-        rootTabBarRouter.presentUnsplash()
+        rootTabBarRouter.presentIGListKitUnsplash()
     }
 }
 

@@ -18,7 +18,7 @@ final class UnsplashPhotoFeedListViewReactorSpecs: QuickSpec {
 
     // MARK: - Typealias
 
-    typealias Reactor = UnsplashPhotoFeedListViewReactor
+    typealias Reactor = IGListKitUnsplashPhotoFeedListViewReactor
 
     // MARK: - Spec
 

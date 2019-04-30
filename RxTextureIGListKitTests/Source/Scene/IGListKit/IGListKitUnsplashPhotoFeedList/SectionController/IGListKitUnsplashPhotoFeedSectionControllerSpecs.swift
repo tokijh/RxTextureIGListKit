@@ -1,5 +1,5 @@
 //
-//  UnsplashPhotoFeedSectionControllerSpecs.swift
+//  IGListKitUnsplashPhotoFeedSectionControllerSpecs.swift
 //  RxTextureIGListKitTests
 //
 //  Created by 윤중현 on 29/04/2019.
@@ -12,7 +12,7 @@ import Nimble
 import Quick
 import Stubber
 
-final class UnsplashPhotoFeedSectionControllerSpecs: QuickSpec {
+final class IGListKitUnsplashPhotoFeedSectionControllerSpecs: QuickSpec {
 
     // MARK: - Spec
 
@@ -20,10 +20,10 @@ final class UnsplashPhotoFeedSectionControllerSpecs: QuickSpec {
 
         // MARK: - Property
 
-        var controller: UnsplashPhotoFeedSectionController!
+        var controller: IGListKitUnsplashPhotoFeedSectionController!
 
         beforeEach {
-            controller = UnsplashPhotoFeedSectionController()
+            controller = IGListKitUnsplashPhotoFeedSectionController()
         }
 
         describe("when didUpdate") {
@@ -33,7 +33,7 @@ final class UnsplashPhotoFeedSectionControllerSpecs: QuickSpec {
                 controller.didUpdate(to: object as Any)
             }
 
-            context("object is DiffableBox<UnsplashPhotoFeedListItem>") {
+            context("object is DiffableBox<IGListKitUnsplashPhotoFeedListItem>") {
                 let photoFeedID = "3289"
                 beforeEach {
                     object = DiffableBox<UnsplashPhotoFeedListItem>(.photoFeed(UnsplashPhotoFeed.stub(id: photoFeedID)))

@@ -1,5 +1,5 @@
 //
-//  UnsplashPhotoFeedListViewControllerSpecs.swift
+//  IGListKitUnsplashPhotoFeedListViewControllerSpecs.swift
 //  RxTextureIGListKitTests
 //
 //  Created by 윤중현 on 29/04/2019.
@@ -12,7 +12,7 @@ import Nimble
 import Quick
 import Stubber
 
-final class UnsplashPhotoFeedListViewControllerSpecs: QuickSpec {
+final class IGListKitUnsplashPhotoFeedListViewControllerSpecs: QuickSpec {
 
     // MARK: - Spec
 
@@ -20,17 +20,17 @@ final class UnsplashPhotoFeedListViewControllerSpecs: QuickSpec {
 
         // MARK: - Property
 
-        var reactor: UnsplashPhotoFeedListViewReactor!
-        var vc: UnsplashPhotoFeedListViewController!
+        var reactor: IGListKitUnsplashPhotoFeedListViewReactor!
+        var vc: IGListKitUnsplashPhotoFeedListViewController!
 
         beforeEach {
             reactor = .stub()
-            vc = UnsplashPhotoFeedListViewController(dependency: .stub(reactor: reactor))
+            vc = IGListKitUnsplashPhotoFeedListViewController(dependency: .stub(reactor: reactor))
         }
 
         describe("when viewDidLoad") {
             let when = {
-                vc = UnsplashPhotoFeedListViewController(dependency: .stub(reactor: reactor))
+                vc = IGListKitUnsplashPhotoFeedListViewController(dependency: .stub(reactor: reactor))
                 vc.viewDidLoad()
             }
 

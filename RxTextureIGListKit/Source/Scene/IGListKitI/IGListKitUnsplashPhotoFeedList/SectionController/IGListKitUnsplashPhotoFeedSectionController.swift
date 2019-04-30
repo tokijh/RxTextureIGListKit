@@ -11,7 +11,7 @@ import IGListKit
 import ReactorKit
 import RxSwift
 
-final class UnsplashPhotoFeedSectionController: ListBindingSectionController<ListDiffable>,
+final class IGListKitUnsplashPhotoFeedSectionController: ListBindingSectionController<ListDiffable>,
     ASSectionController, Reactor, FactoryModule {
 
     // MARK: - Typealias

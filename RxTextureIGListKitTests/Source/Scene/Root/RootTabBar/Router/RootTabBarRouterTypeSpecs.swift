@@ -19,18 +19,18 @@ final class RootTabBarRouterTypeSpecs: QuickSpec {
 
         // MARK: - Property
 
-        var unsplashRouter: StubUnsplashRouter!
+        var igListKitUnsplashRouter: StubIGListKitUnsplashRouter!
         var tabBarController: UITabBarController!
         var router: RootTabBarRouterType!
 
         beforeEach {
             tabBarController = UITabBarController()
-            unsplashRouter = .stub()
+            igListKitUnsplashRouter = .stub()
 
             router = RootTabBarRouterType(
                 dependency: .init(
                     tabBarController: tabBarController,
-                    unsplashRouter: unsplashRouter
+                    igListKitUnsplashRouter: igListKitUnsplashRouter
                 )
             )
         }
@@ -45,9 +45,9 @@ final class RootTabBarRouterTypeSpecs: QuickSpec {
             }
         }
 
-        describe("when presentUnsplash") {
+        describe("when presentIGListKitUnsplash") {
             let when = {
-                router.presentUnsplash()
+                router.presentIGListKitUnsplash()
             }
 
             it("should be fatalError") {

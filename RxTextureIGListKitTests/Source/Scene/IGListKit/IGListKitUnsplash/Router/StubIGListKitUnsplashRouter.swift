@@ -1,5 +1,5 @@
 //
-//  StubUnsplashRouter.swift
+//  StubIGListKitUnsplashRouter.swift
 //  RxTextureIGListKitTests
 //
 //  Created by 윤중현 on 26/04/2019.
@@ -10,7 +10,7 @@
 
 import Stubber
 
-final class StubUnsplashRouter: UnsplashRouterType {
+final class StubIGListKitUnsplashRouter: IGListKitUnsplashRouterType {
 
     override var rootViewController: UIViewController { return getRootViewController() }
 
@@ -19,7 +19,7 @@ final class StubUnsplashRouter: UnsplashRouterType {
     }
 }
 
-extension StubUnsplashRouter {
+extension StubIGListKitUnsplashRouter {
     func getRootViewController() -> UIViewController {
         return Stubber.invoke(self.getRootViewController, args: (), default: UIViewController())
     }
@@ -27,20 +27,20 @@ extension StubUnsplashRouter {
 
 // MARK: - Dependency
 
-extension UnsplashRouterType {
-    static func stub(dependency: Dependency = .stub()) -> StubUnsplashRouter {
+extension IGListKitUnsplashRouterType {
+    static func stub(dependency: Dependency = .stub()) -> StubIGListKitUnsplashRouter {
         return .init(dependency: dependency)
     }
 }
 
-extension UnsplashRouterType.Dependency {
+extension IGListKitUnsplashRouterType.Dependency {
     static func stub(
         navigationController: UINavigationController = UINavigationController(),
-        unsplashPhotoFeedListVCFactory: Factory<UnsplashPhotoFeedListViewController> = .stub()
-        ) -> UnsplashRouterType.Dependency {
+        igListKitUnsplashPhotoFeedListVCFactory: Factory<IGListKitUnsplashPhotoFeedListViewController> = .stub()
+        ) -> IGListKitUnsplashRouterType.Dependency {
         return .init(
             navigationController: navigationController,
-            unsplashPhotoFeedListVCFactory: unsplashPhotoFeedListVCFactory
+            igListKitUnsplashPhotoFeedListVCFactory: igListKitUnsplashPhotoFeedListVCFactory
         )
     }
 }

@@ -12,7 +12,7 @@ class RootTabBarRouterType: BaseRootRouter, FactoryModule {
 
     required init(dependency: Dependency) { }
 
-    func presentUnsplash() {
+    func presentIGListKitUnsplash() {
         abstractMethod()
     }
 }
@@ -20,6 +20,6 @@ class RootTabBarRouterType: BaseRootRouter, FactoryModule {
 extension RootTabBarRouterType {
     struct Dependency {
         let tabBarController: UITabBarController
-        let unsplashRouter: UnsplashRouterType
+        let igListKitUnsplashRouter: IGListKitUnsplashRouterType
     }
 }

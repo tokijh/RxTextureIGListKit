@@ -21,21 +21,21 @@ final class RootTabBarRouterSpecs: QuickSpec {
         // MARK: - Property
 
         var tabBarController: UITabBarController!
-        var unsplashRouter: StubUnsplashRouter!
+        var igListKitUnsplashRouter: StubIGListKitUnsplashRouter!
         var router: RootTabBarRouter!
 
         let initRouter = {
             router = RootTabBarRouter(
                 dependency: .init(
                     tabBarController: tabBarController,
-                    unsplashRouter: unsplashRouter
+                    igListKitUnsplashRouter: igListKitUnsplashRouter
                 )
             )
         }
 
         beforeEach {
             tabBarController = UITabBarController()
-            unsplashRouter = .stub()
+            igListKitUnsplashRouter = .stub()
 
             initRouter()
         }
@@ -50,9 +50,9 @@ final class RootTabBarRouterSpecs: QuickSpec {
             }
 
             it("tabBarController.viewControllers to equal expected") {
-                let unsplashRootViewController = UINavigationController()
-                Stubber.register(unsplashRouter.getRootViewController) { unsplashRootViewController }
-                let expected = [unsplashRootViewController]
+                let igListKitUnsplashRootViewController = UINavigationController()
+                Stubber.register(igListKitUnsplashRouter.getRootViewController) { igListKitUnsplashRootViewController }
+                let expected = [igListKitUnsplashRootViewController]
 
                 when()
 
@@ -60,15 +60,15 @@ final class RootTabBarRouterSpecs: QuickSpec {
             }
         }
 
-        describe("when presentUnsplash") {
+        describe("when presentIGListKitUnsplash") {
             let when = {
-                router.presentUnsplash()
+                router.presentIGListKitUnsplash()
             }
 
-            it("tabBarController.selectedViewControler to equal unsplashRouter.rootViewController") {
+            it("tabBarController.selectedViewControler to equal igListKitUnsplashRouter.rootViewController") {
                 when()
 
-                expect(tabBarController.selectedViewController).to(equal(unsplashRouter.rootViewController))
+                expect(tabBarController.selectedViewController).to(equal(igListKitUnsplashRouter.rootViewController))
             }
         }
 
@@ -86,10 +86,10 @@ final class RootTabBarRouterSpecs: QuickSpec {
                     expect(dependency.tabBarController is RootTabBarController).to(beTrue())
                 }
 
-                it("unsplashViewController is UnsplashRouter") {
+                it("igListKitUnsplashRouter is IGListKitUnsplashRouter") {
                     when()
 
-                    expect(dependency.unsplashRouter is UnsplashRouter).to(beTrue())
+                    expect(dependency.igListKitUnsplashRouter is IGListKitUnsplashRouter).to(beTrue())
                 }
             }
         }

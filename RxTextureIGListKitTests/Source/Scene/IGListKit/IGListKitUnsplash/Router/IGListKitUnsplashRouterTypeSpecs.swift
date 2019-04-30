@@ -1,5 +1,5 @@
 //
-//  UnsplashRouterTypeSpecs.swift
+//  IGListKitUnsplashRouterTypeSpecs.swift
 //  RxTextureIGListKitTests
 //
 //  Created by 윤중현 on 26/04/2019.
@@ -11,7 +11,7 @@
 import Nimble
 import Quick
 
-final class UnsplashRouterTypeSpecs: QuickSpec {
+final class IGListKitUnsplashRouterTypeSpecs: QuickSpec {
 
     // MARK: - Spec
 
@@ -20,17 +20,17 @@ final class UnsplashRouterTypeSpecs: QuickSpec {
         // MARK: - Property
 
         var navigationController: UINavigationController!
-        var unsplashPhotoFeedListVCFactory: StubFactory<UnsplashPhotoFeedListViewController>!
-        var router: UnsplashRouterType!
+        var igListKitUnsplashPhotoFeedListVCFactory: StubFactory<IGListKitUnsplashPhotoFeedListViewController>!
+        var router: IGListKitUnsplashRouterType!
 
         beforeEach {
             navigationController = .init()
-            unsplashPhotoFeedListVCFactory = .stub()
+            igListKitUnsplashPhotoFeedListVCFactory = .stub()
 
-            router = UnsplashRouterType(
+            router = IGListKitUnsplashRouterType(
                 dependency: .init(
                     navigationController: navigationController,
-                    unsplashPhotoFeedListVCFactory: unsplashPhotoFeedListVCFactory
+                    igListKitUnsplashPhotoFeedListVCFactory: igListKitUnsplashPhotoFeedListVCFactory
                 )
             )
         }
