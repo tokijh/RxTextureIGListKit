@@ -17,10 +17,13 @@ final class UnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
 
     enum Action {
         case initialize
+        case loadMore
     }
 
     enum Mutation {
         case setPhotoFeeds([UnsplashPhotoFeed])
+        case addPhotoFeeds([UnsplashPhotoFeed])
+        case setNextPage
     }
 
     struct State {
@@ -28,6 +31,7 @@ final class UnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
         var sectionItems: [UnsplashPhotoFeedListItem] {
             return photoFeeds.map({ .photoFeed($0) })
         }
+        var currentPage: Int = 1
     }
 
     // MARK: - Property
@@ -49,14 +53,33 @@ final class UnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .initialize:
+            let currentPage = currentState.currentPage
+
             // Muataion
             let setPhotoFeeds: Observable<Mutation>
 
-            setPhotoFeeds = service.fetchPopularPhotos(page: 0, perPage: 10)
+            setPhotoFeeds = service.fetchPopularPhotos(page: currentPage, perPage: 100)
                 .asObservable()
                 .map({ .setPhotoFeeds($0) })
 
             return setPhotoFeeds
+
+        case .loadMore:
+            let currentPage = currentState.currentPage
+
+            // Muataion
+            let addPhotoFeeds: Observable<Mutation>
+            let setNextPage: Observable<Mutation>
+
+            setNextPage = .just(.setNextPage)
+
+            addPhotoFeeds = service.fetchPopularPhotos(page: currentPage, perPage: 100)
+                .asObservable()
+                .map({ .addPhotoFeeds($0) })
+                .catchErrorJustComplete()
+                .concat(setNextPage)
+
+            return addPhotoFeeds
         }
     }
 
@@ -66,6 +89,12 @@ final class UnsplashPhotoFeedListViewReactor: Reactor, FactoryModule {
         switch mutation {
         case let .setPhotoFeeds(photoFeeds):
             state.photoFeeds = photoFeeds
+
+        case let .addPhotoFeeds(photoFeeds):
+            state.photoFeeds += photoFeeds
+
+        case .setNextPage:
+            state.currentPage += 1
         }
 
         return state

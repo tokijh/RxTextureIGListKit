@@ -19,6 +19,9 @@
 		601DA6E02276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6DF2276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift */; };
 		601DA6E32276D38100F5BF62 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6E22276D38100F5BF62 /* Matcher.swift */; };
 		601DA6E62276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6E52276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift */; };
+		601DA6E92276E10400F5BF62 /* RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6E82276E10400F5BF62 /* RxSwift.swift */; };
+		601DA6F62276F3A800F5BF62 /* BaseRxListAdapterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6F52276F3A800F5BF62 /* BaseRxListAdapterDataSource.swift */; };
+		601DA6F82276F40700F5BF62 /* RxListAdapterDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DA6F72276F40700F5BF62 /* RxListAdapterDataSourceType.swift */; };
 		60709C292271D65100E2A9D1 /* PayloadFactoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C282271D65100E2A9D1 /* PayloadFactoryModule.swift */; };
 		60709C2B2271D65900E2A9D1 /* PayloadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */; };
 		60709C2D2271D71200E2A9D1 /* PayloadConfiguratorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */; };
@@ -120,6 +123,9 @@
 		601DA6DF2276CEBF00F5BF62 /* StubUnsplashUserProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUnsplashUserProfileImage.swift; sourceTree = "<group>"; };
 		601DA6E22276D38100F5BF62 /* Matcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
 		601DA6E52276DB5600F5BF62 /* UnsplashPhotoFeedSectionControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotoFeedSectionControllerSpecs.swift; sourceTree = "<group>"; };
+		601DA6E82276E10400F5BF62 /* RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift.swift; sourceTree = "<group>"; };
+		601DA6F52276F3A800F5BF62 /* BaseRxListAdapterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRxListAdapterDataSource.swift; sourceTree = "<group>"; };
+		601DA6F72276F40700F5BF62 /* RxListAdapterDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListAdapterDataSourceType.swift; sourceTree = "<group>"; };
 		60709C282271D65100E2A9D1 /* PayloadFactoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadFactoryModule.swift; sourceTree = "<group>"; };
 		60709C2A2271D65900E2A9D1 /* PayloadFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadFactory.swift; sourceTree = "<group>"; };
 		60709C2C2271D71200E2A9D1 /* PayloadConfiguratorModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadConfiguratorModule.swift; sourceTree = "<group>"; };
@@ -415,10 +421,12 @@
 			isa = PBXGroup;
 			children = (
 				60709C712275B90D00E2A9D1 /* RxIGListAdapterDataSource.swift */,
+				601DA6F72276F40700F5BF62 /* RxListAdapterDataSourceType.swift */,
 				60709C732275DE3100E2A9D1 /* RxListAdapterDataSourceProxy.swift */,
 				60709C752275E0B100E2A9D1 /* ListAdapter+Rx.swift */,
 				60709C9C22769C3500E2A9D1 /* Diffable.swift */,
 				60709CA022769F0900E2A9D1 /* ListSectionController+Rx.swift */,
+				601DA6F52276F3A800F5BF62 /* BaseRxListAdapterDataSource.swift */,
 			);
 			path = RxIGListKit;
 			sourceTree = "<group>";
@@ -514,10 +522,11 @@
 				60DF31972271685300E05C00 /* Router */,
 				60709C552272AF6500E2A9D1 /* Service */,
 				60709C602272D2FA00E2A9D1 /* ReactorKit */,
+				60709C9B22769BF500E2A9D1 /* RxIGListKit */,
 				60DF31B222717BCF00E05C00 /* Base */,
 				60DF31C72271A29100E05C00 /* Swift.swift */,
+				601DA6E82276E10400F5BF62 /* RxSwift.swift */,
 				60709C6F22758AA800E2A9D1 /* Date.swift */,
-				60709C9B22769BF500E2A9D1 /* RxIGListKit */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1056,6 +1065,7 @@
 				60DF31FD2271D3F500E05C00 /* Configurator.swift in Sources */,
 				60709C502272AF1500E2A9D1 /* UnsplashUserProfileImage.swift in Sources */,
 				60DF31992271688700E05C00 /* Application.swift in Sources */,
+				601DA6F82276F40700F5BF62 /* RxListAdapterDataSourceType.swift in Sources */,
 				60DF31C022717F9400E05C00 /* RootTabBarRouter.swift in Sources */,
 				60709C4C2272AEEF00E2A9D1 /* UnsplashPhotoURL.swift in Sources */,
 				60709C9D22769C3500E2A9D1 /* Diffable.swift in Sources */,
@@ -1065,6 +1075,7 @@
 				60709C662272F25300E2A9D1 /* UnsplashPhotoFeedSectionController.swift in Sources */,
 				60709C5D2272CDCE00E2A9D1 /* UnsplashPhotoFeedListViewReactor.swift in Sources */,
 				60709C2D2271D71200E2A9D1 /* PayloadConfiguratorModule.swift in Sources */,
+				601DA6F62276F3A800F5BF62 /* BaseRxListAdapterDataSource.swift in Sources */,
 				60DF319F22716F4400E05C00 /* main.swift in Sources */,
 				60DF31902271680300E05C00 /* ApplicationType.swift in Sources */,
 				60709CA122769F0900E2A9D1 /* ListSectionController+Rx.swift in Sources */,
@@ -1087,6 +1098,7 @@
 				60709C622272E8F200E2A9D1 /* UnsplashService.swift in Sources */,
 				60DF31E02271B26000E05C00 /* ApplicationDelegate.swift in Sources */,
 				60DF32002271D3F500E05C00 /* Factory.swift in Sources */,
+				601DA6E92276E10400F5BF62 /* RxSwift.swift in Sources */,
 				60709C2B2271D65900E2A9D1 /* PayloadFactory.swift in Sources */,
 				60709C572272AF6D00E2A9D1 /* Service.swift in Sources */,
 				60DF32052271D5A700E05C00 /* PayloadModule.swift in Sources */,

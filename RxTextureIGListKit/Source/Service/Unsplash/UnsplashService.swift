@@ -32,14 +32,14 @@ extension UnsplashService {
             })
     }
 
-    var requiredParameters: [String: Any]? {
+    var requiredParameters: [String: String]? {
         return ["client_id": clientID]
     }
 
     func generateURL(endpoint: Endpoint, parameters: [String: Any]? = nil) -> URLRequest? {
         var components = URLComponents(string: host + endpoint.path)
 
-        var paramters: [String: Any] = [:]
+        var paramters: [String: String] = [:]
         if let endpointParameters = endpoint.parameters {
             paramters.merge(endpointParameters) { _, new in new }
         }
@@ -47,7 +47,6 @@ extension UnsplashService {
             paramters.merge(requiredParameters) { _, new in new }
         }
         components?.queryItems = paramters
-            .compactMapValues({ $0 as? String })
             .map({ URLQueryItem(name: $0.key, value: $0.value) })
 
         guard let url = components?.url
@@ -61,13 +60,13 @@ extension UnsplashService {
     enum Endpoint {
         case popular(page: Int, perPage: Int)
 
-        var parameters: [String: Any]? {
+        var parameters: [String: String]? {
             switch self {
             case let .popular(page, perPage):
                 return [
                     "order_by": "popular",
-                    "page": page,
-                    "per_page": perPage
+                    "page": "\(page)",
+                    "per_page": "\(perPage)"
                 ]
             }
         }
